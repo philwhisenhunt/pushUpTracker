@@ -13,11 +13,11 @@ export default function App() {
         title="Log a push-up!"
       />
 
-      <Text style>Pull-up tracker</Text>
+      <Text>Pull-up tracker</Text>
       <Text>You did {pullup_count} pull-ups!</Text>
       <Button
         onPress={() => setAnotherCount(pullup_count + 1)}
-        title="Log a push-up!"
+        title="Log a pull-up!"
       />
     </View>
   );
