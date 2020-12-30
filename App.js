@@ -5,8 +5,8 @@ const App = () => {
   const [count, setCount] = useState(0);
 
   return (
-    <View style={StyleSheet.container}>
-      <Text> You did {count} push-ups</Text>
+    <View style={styles.container}>
+      <Text>You did {count} push-ups</Text>
       <Button
       onPress={()} => setCount(count + 1)}
       title="Click me!"
