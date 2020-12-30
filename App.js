@@ -7,10 +7,7 @@ const App = () => {
   return (
     <View style={styles.container}>
       <Text>You did {count} push-ups</Text>
-      <Button
-      onPress={()} => setCount(count + 1)}
-      title="Click me!"
-    />
+      <Button onPress={() => setCount(count + 1)} title="Click me!" />
     </View>
   );
 };
