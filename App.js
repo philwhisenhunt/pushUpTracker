@@ -1,13 +1,24 @@
 import React, { useState } from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
 export default function App() {
-  const [count, setCount] = useState(0);
+  const [pushup_count, setCount] = useState(0);
+  // var [pullup_count, setAnotherCount] = useState(0);
 
   return (
     <View style={styles.container}>
-      <Text>Push up tracker</Text>
-      <Text>You did {count} push-ups!</Text>
-      <Button onPress={() => setCount(count + 1)} title="Log a push-up!" />
+      <Text>Push-up tracker</Text>
+      <Text>You did {pushup_count} push-ups!</Text>
+      <Button
+        onPress={() => setCount(pushup_count + 1)}
+        title="Log a push-up!"
+      />
+
+      {/* <Text style>Pull-up tracker</Text>
+      <Text>You did {pullup_count} pull-ups!</Text>
+      <Button
+        onPress={() => setAnotherCount(pullup_count + 1)}
+        title="Log a push-up!"
+      /> */}
     </View>
   );
 }
