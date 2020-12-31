@@ -5,7 +5,7 @@ const PushUpCounter = ({ title, buttonTitle }) => {
 
   return (
     <>
-      <Text>{title}</Text>
+      {/* <Text>{title}</Text> */}
       <Text>You did {pushupCount} push-ups!</Text>
       <Button
         onPress={() => setPushupCount(pushupCount + 1)}
