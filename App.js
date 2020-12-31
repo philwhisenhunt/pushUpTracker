@@ -13,7 +13,6 @@ export default function App() {
 
         <PullUpCounter title="Pull-up tracker" buttonTitle="Log a pull-up!" />
       </View>
-      {/* <View style={styles.bottomBlock}></View> */}
     </View>
   );
 }

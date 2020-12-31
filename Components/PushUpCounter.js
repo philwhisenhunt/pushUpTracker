@@ -8,7 +8,6 @@ const PushUpCounter = ({ title, buttonTitle }) => {
       <Text>{title}</Text>
       <Text>You did {pushupCount} push-ups!</Text>
       <Button
-        // style={styles.wideButton}
         onPress={() => setPushupCount(pushupCount + 1)}
         title={buttonTitle}
       />

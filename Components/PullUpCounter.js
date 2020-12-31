@@ -7,10 +7,12 @@ const PullUpCounter = ({ title, buttonTitle }) => {
     <View style={styles.wideButton}>
       <Text>{title}</Text>
       <Text>You did {pullupCount} pull-ups!</Text>
-      <Button
-        onPress={() => setPullupCount(pullupCount + 1)}
-        title={buttonTitle}
-      />
+      <View style={styles.wideButton}>
+        <Button
+          onPress={() => setPullupCount(pullupCount + 1)}
+          title={buttonTitle}
+        />
+      </View>
     </View>
   );
 };
@@ -18,7 +20,7 @@ export default PullUpCounter;
 const styles = StyleSheet.create({
   wideButton: {
     flex: 1,
-    backgroundColor: "coral",
+    backgroundColor: "steelblue",
     alignItems: "center",
     justifyContent: "center",
     alignSelf: "stretch",
