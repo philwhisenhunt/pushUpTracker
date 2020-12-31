@@ -5,14 +5,13 @@ const PullUpCounter = ({ title, buttonTitle }) => {
 
   return (
     <View style={styles.wideButton}>
-      <Text>{title}</Text>
+      <Button
+        onPress={() => setPullupCount(pullupCount + 1)}
+        title={buttonTitle}
+        color="skyblue"
+      />
+
       <Text>You did {pullupCount} pull-ups!</Text>
-      <View style={styles.wideButton}>
-        <Button
-          onPress={() => setPullupCount(pullupCount + 1)}
-          title={buttonTitle}
-        />
-      </View>
     </View>
   );
 };
