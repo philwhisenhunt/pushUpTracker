@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
 import PushUpCounter from "./Components/PushUpCounter";
+import PullUpCounter from "./Components/PushUpCounter";
 export default function App() {
   const [pullupCount, setPullupCount] = useState(20);
   return (
@@ -8,13 +9,7 @@ export default function App() {
       <Text style={styles.title}>Big Title</Text>
 
       <PushUpCounter title="Push-up tracker" buttonTitle="Log a push-up!" />
-      <Text>Pull-up tracker</Text>
-
-      <Text>You did {pullupCount} pull-ups!</Text>
-      <Button
-        onPress={() => setPullupCount(pullupCount + 1)}
-        title="Log a pull-up!"
-      />
+      <PullUpCounter title="Pull-up tracker" buttonTitle="Log a pull-up!" />
     </View>
   );
 }
