@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     color: "green",
   },
   topBlock: {
-    flex: 1,
+    flex: 2,
     backgroundColor: "powderblue",
   },
   middleBlock: {
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   bottomBlock: {
-    flex: 3,
+    flex: 2,
     backgroundColor: "steelblue",
   },
 });
