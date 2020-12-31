@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
 import PushUpCounter from "./Components/PushUpCounter";
-import PullUpCounter from "./Components/PushUpCounter";
+import PullUpCounter from "./Components/PullUpCounter";
 export default function App() {
-  const [pullupCount, setPullupCount] = useState(20);
   return (
     <View style={styles.container}>
-      <View style={styles.topBlock}></View>
-      <View style={styles.middleBlock}>
+      <View style={styles.topBlock}>
         <Text style={styles.title}>Workout Tracker</Text>
-
+      </View>
+      <View style={styles.middleBlock}>
         <PushUpCounter title="Push-up tracker" buttonTitle="Log a push-up!" />
+
         <PullUpCounter title="Pull-up tracker" buttonTitle="Log a pull-up!" />
       </View>
       <View style={styles.bottomBlock}></View>
@@ -24,21 +24,30 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
   },
   title: {
-    fontSize: 20,
-    color: "green",
+    fontSize: 40,
+    color: "steelblue",
+    paddingTop: 40,
   },
   topBlock: {
-    flex: 2,
+    flex: 1,
     backgroundColor: "powderblue",
+    justifyContent: "center",
+    alignItems: "center",
   },
   middleBlock: {
     flex: 2,
     backgroundColor: "skyblue",
-    alignItems: "center",
-    justifyContent: "center",
   },
   bottomBlock: {
-    flex: 2,
+    flex: 1,
     backgroundColor: "steelblue",
   },
+  // wideButton: {
+  //   flex: 1,
+  //   backgroundColor: "coral",
+  //   alignItems: "center",
+  //   justifyContent: "center",
+  //   alignSelf: "stretch",
+  //   maxHeight: 100,
+  // },
 });
