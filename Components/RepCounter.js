@@ -13,3 +13,4 @@ const repCounter = ({ title, buttonTitle, repType }) => {
     </>
   );
 };
+export default repCounter;
