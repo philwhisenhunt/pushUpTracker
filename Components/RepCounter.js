@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
 const repCounter = ({ title, buttonTitle, repType }) => {
   const [repCount, setRepCount] = useState(10);
+  //do I need to import repType here?
 
   return (
     <>
@@ -10,6 +11,9 @@ const repCounter = ({ title, buttonTitle, repType }) => {
         title={buttonTitle}
         color="steelblue"
       />
+      <Text>
+        You did {repCount} {repType}
+      </Text>
     </>
   );
 };
