@@ -12,7 +12,7 @@ const repCounter = ({ title, buttonTitle, repType }) => {
         color="steelblue"
       />
       <Text>
-        You did {repCount} {repType}
+        You diid {repCount} {repType}
       </Text>
     </>
   );
