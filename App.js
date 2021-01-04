@@ -12,6 +12,7 @@ export default function App() {
         <PushUpCounter title="Push-up tracker" buttonTitle="Log a push-up!" />
 
         <PullUpCounter title="Pull-up tracker" buttonTitle="Log a pull-up!" />
+        <RepCounter title="Sit-up tracker" buttonTitle="Log a sit-up" repType="sitUp" />
       </View>
     </View>
   );
