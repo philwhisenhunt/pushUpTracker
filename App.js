@@ -12,11 +12,15 @@ export default function App() {
       <View style={styles.middleBlock}>
         <PushUpCounter title="Push-up tracker" buttonTitle="Log a push-up!" />
 
-        <PullUpCounter title="Pull-up tracker" buttonTitle="Log a pull-up!" />
+        <RepCounter
+          title="Pull-up tracker"
+          buttonTitle="Log a pull-up!"
+          repType="Pull-ups"
+        />
         <RepCounter
           title="Sit-up tracker"
           buttonTitle="Log a sit-up"
-          repType="sitUp"
+          repType="Sit-Ups"
         />
       </View>
     </View>
