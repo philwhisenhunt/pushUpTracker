@@ -10,8 +10,11 @@ export default function App() {
         <Text style={styles.title}>Workout Tracker</Text>
       </View>
       <View style={styles.middleBlock}>
-        <PushUpCounter title="Push-up tracker" buttonTitle="Log a push-up!" />
-
+        <RepCounter
+          title="Push-up tracker"
+          buttonTitle="Log a push-up"
+          repType="Push-ups"
+        />
         <RepCounter
           title="Pull-up tracker"
           buttonTitle="Log a pull-up!"
