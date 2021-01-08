@@ -21,6 +21,11 @@ export default function App() {
           repType="Pull-ups"
         />
         <RepCounter
+          title="Chin-up tracker"
+          buttonTitle="Log a chin-up"
+          repType="Chin-ups"
+        />
+        <RepCounter
           title="Sit-up tracker"
           buttonTitle="Log a sit-up"
           repType="Sit-Ups"
