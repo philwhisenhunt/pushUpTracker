@@ -8,6 +8,7 @@ export default function App() {
     <View style={styles.container}>
       <View style={styles.topBlock}>
         <Text style={styles.title}>Workout Tracker</Text>
+        <Text style={styles.title}>Tap Each Button to add a rep</Text>
       </View>
       <View style={styles.middleBlock}>
         <RepCounter
@@ -30,6 +31,7 @@ export default function App() {
           buttonTitle="Log a sit-up"
           repType="Sit-Ups"
         />
+        <Button title="Save workout" />
       </View>
     </View>
   );
