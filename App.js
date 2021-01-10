@@ -31,7 +31,10 @@ export default function App() {
           buttonTitle="Log a sit-up"
           repType="Sit-Ups"
         />
-        <Button title="Save workout" />
+        <Button
+          // onPress={() => setWorkoutTotalRep()}
+          title="Save workout"
+        />
       </View>
     </View>
   );
