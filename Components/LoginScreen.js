@@ -6,6 +6,8 @@ state={
     password:""
 }
 
+<View style={styles.inputView} >
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
