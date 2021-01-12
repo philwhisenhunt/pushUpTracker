@@ -3,7 +3,7 @@ import { View, Text, Button, StyleSheet } from "react-native";
 import { store, view } from "@risingstack/react-easy-state";
 const repCounter = ({ title, buttonTitle, repType }) => {
   const [repCount, setRepCount] = useState(0);
-  const user = store({ name: "Rick" + title });
+  const user = store({ name: "Phil's " + title });
   return (
     <>
       <Button
@@ -14,7 +14,7 @@ const repCounter = ({ title, buttonTitle, repType }) => {
       <Text>
         You did {repCount} {repType}
       </Text>
-      <Text>You are {store.name}</Text>
+      <Text>You are {user.name}</Text>
     </>
   );
 };
