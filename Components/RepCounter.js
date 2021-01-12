@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
+import { store, view } from "react-easy-state";
 const repCounter = ({ title, buttonTitle, repType }) => {
   const [repCount, setRepCount] = useState(0);
 
