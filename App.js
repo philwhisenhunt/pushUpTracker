@@ -4,6 +4,7 @@ import PushUpCounter from "./Components/PushUpCounter";
 import PullUpCounter from "./Components/PullUpCounter";
 import RepCounter from "./Components/RepCounter";
 export default function App() {
+  const totalReps = 4;
   return (
     <View style={styles.container}>
       <View style={styles.topBlock}>
@@ -32,10 +33,11 @@ export default function App() {
           repType="Sit-Ups"
         />
         <Button
-          // onPress={() => setWorkoutTotalRep()}
+          onPress={() => (totalReps = totalReps++)}
           title="Save workout"
         />
       </View>
+      <Text>Total reps: {totalReps}</Text>
     </View>
   );
 }
