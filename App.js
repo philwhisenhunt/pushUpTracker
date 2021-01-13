@@ -3,12 +3,12 @@ import { View, Text, Button, StyleSheet } from "react-native";
 import PushUpCounter from "./Components/PushUpCounter";
 import PullUpCounter from "./Components/PullUpCounter";
 import RepCounter from "./Components/RepCounter";
-import { store, view } from "@risingstack/react-easy-state";
+import { view } from "@risingstack/react-easy-state";
+import RepStore from "./Stores/RepStore";
 
 export default view(function App() {
   const [totalReps, setTotalReps] = useState(4);
   const [repCount, setRepCount] = useState(0);
-  console.log(store().amount);
   return (
     <View style={styles.container}>
       <View style={styles.topBlock}>
@@ -34,14 +34,14 @@ export default view(function App() {
         <RepCounter
           title="Sit-up tracker"
           buttonTitle="Log a sit-up"
-          repType="Sit-Ups"
+          repType="Sit-ups"
         />
         <Button
           onPress={() => setTotalReps(totalReps + 1)}
           title="Save workout"
         />
       </View>
-      <Text>Total reps: {JSON.stringify(store)}</Text>
+      <Text>Total reps: {RepStore.totalReps}</Text>
     </View>
   );
 });
