@@ -3,6 +3,8 @@ import { View, Text, Button, StyleSheet } from "react-native";
 import PushUpCounter from "./Components/PushUpCounter";
 import PullUpCounter from "./Components/PullUpCounter";
 import RepCounter from "./Components/RepCounter";
+import { store, view } from "@risingstack/react-easy-state";
+
 export default function App() {
   const [totalReps, setTotalReps] = useState(4);
   const [repCount, setRepCount] = useState(0);
@@ -38,9 +40,7 @@ export default function App() {
           title="Save workout"
         />
       </View>
-      <Text onChange={(totalReps) => setTotalReps(totalReps + 9)}>
-        Total reps: {totalReps}
-      </Text>
+      {/* <Text>Total reps: {globalRepCount.amount}</Text> */}
     </View>
   );
 }
