@@ -5,9 +5,10 @@ import PullUpCounter from "./Components/PullUpCounter";
 import RepCounter from "./Components/RepCounter";
 import { store, view } from "@risingstack/react-easy-state";
 
-export default function App() {
+export default view(function App() {
   const [totalReps, setTotalReps] = useState(4);
   const [repCount, setRepCount] = useState(0);
+  console.log(store().amount);
   return (
     <View style={styles.container}>
       <View style={styles.topBlock}>
@@ -40,10 +41,10 @@ export default function App() {
           title="Save workout"
         />
       </View>
-      {/* <Text>Total reps: {globalRepCount.amount}</Text> */}
+      <Text>Total reps: {JSON.stringify(store)}</Text>
     </View>
   );
-}
+});
 
 const styles = StyleSheet.create({
   container: {
