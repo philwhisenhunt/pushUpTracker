@@ -38,7 +38,9 @@ export default function App() {
           title="Save workout"
         />
       </View>
-      <Text>Total reps: {totalReps}</Text>
+      <Text onChange={(totalReps) => setTotalReps(totalReps + 9)}>
+        Total reps: {totalReps}
+      </Text>
     </View>
   );
 }
