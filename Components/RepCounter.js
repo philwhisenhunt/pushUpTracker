@@ -4,6 +4,7 @@ import { store, view } from "@risingstack/react-easy-state";
 const repCounter = ({ title, buttonTitle, repType }) => {
   const [repCount, setRepCount] = useState(0);
   const user = store({ name: "Phil's " + title });
+  const globalRepCount = store({ amount: 10 });
   return (
     <>
       <Button
@@ -14,7 +15,10 @@ const repCounter = ({ title, buttonTitle, repType }) => {
       <Text>
         You did {repCount} {repType}
       </Text>
-      <Text>You are {user.name}</Text>
+      <Text>
+        You are {user.name} and you did {globalRepCount.amount} total reps this
+        workout.
+      </Text>
     </>
   );
 };
