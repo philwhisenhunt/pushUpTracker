@@ -1,14 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
-import PushUpCounter from "./Components/PushUpCounter";
-import PullUpCounter from "./Components/PullUpCounter";
 import RepCounter from "./Components/RepCounter";
 import { view } from "@risingstack/react-easy-state";
 import RepStore from "./Stores/RepStore";
 
 export default view(function App() {
-  const [totalReps, setTotalReps] = useState(4);
-  const [repCount, setRepCount] = useState(0);
   return (
     <View style={styles.container}>
       <View style={styles.topBlock}>
