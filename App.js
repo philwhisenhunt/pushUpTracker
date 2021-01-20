@@ -3,8 +3,9 @@ import { View, Text, Button, StyleSheet } from "react-native";
 import RepCounter from "./Components/RepCounter";
 import { view } from "@risingstack/react-easy-state";
 import RepStore from "./Stores/RepStore";
-
+import getStuff from "./src/FetchStuff.js";
 export default view(function App() {
+  const bob = "bob";
   return (
     <View style={styles.container}>
       <View style={styles.topBlock}>
@@ -32,9 +33,15 @@ export default view(function App() {
           buttonTitle="Log a sit-up"
           repType="Sit-ups"
         />
-        <Button
+        {/* <Button
           onPress={() => setTotalReps(totalReps + 1)}
           title="Save workout"
+        /> */}
+        <Button
+          onPress={() => {
+            this.getStuff();
+          }}
+          title="Test API"
         />
       </View>
       <Text>Total reps: {RepStore.totalReps}</Text>
