@@ -3,7 +3,7 @@ import { View, Text, Button, StyleSheet } from "react-native";
 import RepCounter from "./Components/RepCounter";
 import { view } from "@risingstack/react-easy-state";
 import RepStore from "./Stores/RepStore";
-import getStuff from "./src/FetchStuff.js";
+import { getStuff } from "./src/FetchStuff.js";
 export default view(function App() {
   const bob = "bob";
   return (
@@ -39,7 +39,7 @@ export default view(function App() {
         /> */}
         <Button
           onPress={() => {
-            this.getStuff();
+            getStuff();
           }}
           title="Test API"
         />
