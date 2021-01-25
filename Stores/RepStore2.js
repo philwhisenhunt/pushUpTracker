@@ -5,6 +5,7 @@ const RepStore2 = store({
   "Pull-ups": 0,
   "Sit-ups": 0,
   "Chin-ups": 0,
+  "Dips": 0,
 
   setReps(name, count) {
     this[name] = count;
