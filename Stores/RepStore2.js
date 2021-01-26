@@ -13,7 +13,7 @@ const RepStore2 = store({
 
   get totalReps() {
     return (
-      this["Push-ups"] + this["Pull-ups"] + this["Sit-ups"] + this["Chin-ups"]
+      this["Push-ups"] + this["Pull-ups"] + this["Sit-ups"] + this["Chin-ups"] + this["Dips"]
     );
   },
 });
