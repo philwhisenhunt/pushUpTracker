@@ -33,10 +33,13 @@ export default view(function App() {
           buttonTitle="Log a sit-up"
           repType="Sit-ups"
         />
-        {/* <Button
-          onPress={() => setTotalReps(totalReps + 1)}
+        <Button
+          onPress={async () => {
+            const data = await saveStuff();
+            setExerciseInfo(data)
+          }}
           title="Save workout"
-        /> */}
+        />
         <Button
           onPress={async () => {
             const data = await getStuff();
