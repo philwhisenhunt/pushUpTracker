@@ -4,8 +4,10 @@ import RepCounter from "./Components/RepCounter";
 import { view } from "@risingstack/react-easy-state";
 import RepStore from "./Stores/RepStore";
 import { getStuff } from "./src/FetchStuff.js";
+import { saveStuff } from "./src/SaveStuff.js";
 export default view(function App() {
   const [exerciseInfo, setExerciseInfo] = useState({});
+  const [serverResponse, setServerResponse] = useState({});
   return (
     <View style={styles.container}>
       <View style={styles.topBlock}>
@@ -35,20 +37,21 @@ export default view(function App() {
         />
         <Button
           onPress={async () => {
-            const data = await saveStuff();
-            setExerciseInfo(data)
+            const data = await saveStuff("http://127.0.0.1:3000/exercise_sets/create", {"rep_count":"12"});
+            setServerResponse(data)
           }}
           title="Save workout"
         />
-        <Button
+        {/* <Button
           onPress={async () => {
             const data = await getStuff();
             setExerciseInfo(data);
           }}
           title="Test API"
-        />
+        /> */}
       </View>
       <Text>Rep Count: {exerciseInfo.rep_count}</Text>
+      <Text>What the server sent back: {serverResponse.rep_count}</Text>
       <Text>Total reps: {RepStore.totalReps}</Text>
     </View>
   );
