@@ -37,18 +37,21 @@ export default view(function App() {
         />
         <Button
           onPress={async () => {
-            const data = await saveStuff("http://127.0.0.1:3000/exercise_sets/create", {rep_count:"12"});
-            setServerResponse(data)
+            const data = await saveStuff(
+              "http://localhost:3000/exercise_sets.json",
+              { rep_count: "12" }
+            );
+            setServerResponse(data);
           }}
           title="Save workout"
         />
-        {/* <Button
+        <Button
           onPress={async () => {
             const data = await getStuff();
             setExerciseInfo(data);
           }}
           title="Test API"
-        /> */}
+        />
       </View>
       <Text>Rep Count: {exerciseInfo.rep_count}</Text>
       <Text>What the server sent back: {serverResponse.rep_count}</Text>
