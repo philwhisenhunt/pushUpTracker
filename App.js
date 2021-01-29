@@ -37,7 +37,7 @@ export default view(function App() {
         />
         <Button
           onPress={async () => {
-            const data = await saveStuff("http://127.0.0.1:3000/exercise_sets/create", {"rep_count":"12"});
+            const data = await saveStuff("http://127.0.0.1:3000/exercise_sets/create", {rep_count:"12"});
             setServerResponse(data)
           }}
           title="Save workout"
