@@ -54,7 +54,7 @@ export default view(function App() {
               onPress={async () => {
                 const data = await saveStuff(
                   "http://localhost:3000/exercise_sets.json",
-                  { rep_count: "12", weight: 120 }
+                  { rep_count: "12", weight: 120, exercise_type: "kettlebell rows" }
                 );
                 setServerResponse(data);
               }}
