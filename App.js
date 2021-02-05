@@ -14,7 +14,6 @@ import { saveStuff } from "./src/SaveStuff.js";
 export default view(function App() {
   const [exerciseInfo, setExerciseInfo] = useState({});
   const [serverResponse, setServerResponse] = useState({});
-
   return (
     <View style={styles.container}>
       {RepStore.isHydrated === false && (
@@ -50,6 +49,12 @@ export default view(function App() {
               buttonTitle="Log a sit-up"
               repType="Sit-ups"
             />
+            <View style={styles.giantDisplay}>
+              <Text>Today's progress</Text>
+              <Text style={styles.totalRepsDisplay}>
+                {RepStore.totalReps} / {RepStore.repGoal}
+              </Text>
+            </View>
           </View>
           <View style={styles.fitToText}>
             <Button
@@ -133,5 +138,14 @@ const styles = StyleSheet.create({
   fitToText: {
     flexDirection: "row",
     justifyContent: "center",
+  },
+  totalRepsDisplay: {
+    fontSize: 40,
+  },
+  giantDisplay: {
+    fontSize: 30,
+    flexDirection: "row",
+    justifyContent: "center",
+    backgroundColor: "white",
   },
 });
