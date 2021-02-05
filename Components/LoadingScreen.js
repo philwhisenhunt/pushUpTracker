@@ -1,11 +1,19 @@
-<View style={styles.blueBackground}>
-  <View style={styles.loadingBoxTop}>
-    <Text style={styles.innerText}>Current: 300</Text>
-  </View>
-  <View style={styles.loadingBoxBottom}>
-    <Text style={styles.innerText}>Goal: 300</Text>
-  </View>
-</View>;
+import React, { useState } from "react";
+import { View, Text, Button, StyleSheet } from "react-native";
+const LoadingScreen = () => {
+  return (
+    <View style={styles.blueBackground}>
+      <View style={styles.loadingBoxTop}>
+        <Text style={styles.innerText}>Current: 300</Text>
+      </View>
+      <View style={styles.loadingBoxBottom}>
+        <Text style={styles.innerText}>Goal: 300</Text>
+      </View>
+    </View>
+  );
+};
+
+export default LoadingScreen;
 const styles = StyleSheet.create({
   innerText: {
     color: "white",

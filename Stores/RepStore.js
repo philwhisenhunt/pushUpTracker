@@ -1,7 +1,7 @@
 import { store, view } from "@risingstack/react-easy-state";
 import AsyncStorage from "@react-native-community/async-storage";
 import { observe } from "@nx-js/observer-util";
-import repCounter from "../Components/RepCounter";
+
 const RepStore = store({
   //Eventually, this should be seeded with stuff from the API
   "Push-up": 0,
