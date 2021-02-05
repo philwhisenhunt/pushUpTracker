@@ -32,24 +32,24 @@ export default view(function App() {
             <RepCounter
               title="Push-up tracker"
               buttonTitle="Push-up"
-              repType="Push-ups"
+              repType="Push-up"
             />
             <RepCounter
               title="Pull-up tracker"
               buttonTitle="Pull-up!"
-              repType="Pull-ups"
+              repType="Pull-up"
             />
-            <RepCounter
+            {/* <RepCounter
               title="Chin-up tracker"
               buttonTitle="Chin-up"
               repType="Chin-ups"
-            />
+            /> */}
             <RepCounter
               title="Sit-up tracker"
               buttonTitle="Sit-up"
-              repType="Sit-ups"
+              repType="Sit-up"
             />
-            <Text>Today's progress</Text>
+            {/* <Text>Today's progress</Text> */}
             <View style={styles.giantDisplay}>
               <Text style={styles.totalRepsDisplay}>
                 {RepStore.totalReps} / {RepStore.repGoal}
@@ -72,7 +72,7 @@ export default view(function App() {
             /> */}
           </View>
           <View style={styles.fitToText}>
-            <Button
+            {/* <Button
               onPress={async () => {
                 const data = await getStuff();
                 setExerciseInfo(data);
@@ -80,7 +80,7 @@ export default view(function App() {
               title="Test API"
               style={styles.submitButton}
               color="black"
-            />
+            /> */}
             <Button
               onPress={async () => {
                 const data = await saveStuff(

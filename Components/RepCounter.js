@@ -7,16 +7,16 @@ const repCounter = view(({ title, buttonTitle, repType }) => {
   const reps = RepStore[repType];
   return (
     <>
+      <Text style={styles.repCountingText}>
+        {reps} {repType + "s"}
+      </Text>
       <Button
         onPress={() => {
           RepStore.setReps(repType, reps + 1);
         }}
-        title={repType} //How can I add two piece of text here
+        title={"Add " + repType} //How can I add two piece of text here
         color="steelblue"
       />
-      <Text style={styles.repCountingText}>
-        {reps} {repType}
-      </Text>
     </>
   );
 });

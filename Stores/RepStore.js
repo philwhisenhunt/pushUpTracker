@@ -4,23 +4,21 @@ import { observe } from "@nx-js/observer-util";
 import repCounter from "../Components/RepCounter";
 const RepStore = store({
   //Eventually, this should be seeded with stuff from the API
-  "Push-ups": 0,
-  "Pull-ups": 0,
-  "Sit-ups": 0,
-  "Chin-ups": 0,
+  "Push-up": 0,
+  "Pull-up": 0,
+  "Sit-up": 0,
+  "Chin-up": 0,
   repGoal: 300,
 
   isHydrated: false,
-  persistableFields: ["Push-ups", "Pull-ups", "Sit-ups", "Chin-ups"],
+  persistableFields: ["Push-up", "Pull-up", "Sit-up", "Chin-up"],
 
   setReps(name, count) {
     this[name] = count;
   },
 
   get totalReps() {
-    return (
-      this["Push-ups"] + this["Pull-ups"] + this["Sit-ups"] + this["Chin-ups"]
-    );
+    return this["Push-up"] + this["Pull-up"] + this["Sit-up"] + this["Chin-up"];
   },
 });
 
