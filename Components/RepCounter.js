@@ -4,9 +4,6 @@ import { view } from "@risingstack/react-easy-state";
 import RepStore from "./../Stores/RepStore";
 
 const repCounter = view(({ title, buttonTitle, repType }) => {
-  // AROTH: don't need to use local state, use the global RepStore imported above
-  // const [repCount, setRepCount] = useState(0);
-
   const reps = RepStore[repType];
   return (
     <>
@@ -17,13 +14,18 @@ const repCounter = view(({ title, buttonTitle, repType }) => {
         title={buttonTitle}
         color="steelblue"
       />
-      <Text>
-        You did {reps} {repType}
-      </Text>
-      <Text>
-        You are {"NAME"} and you did {reps} total reps this workout.
+      <Text style={styles.repCountingText}>
+        {reps} {repType}
       </Text>
     </>
   );
+});
+
+const styles = StyleSheet.create({
+  repCountingText: {
+    fontSize: 20,
+    // flex: 1,
+    // backgroundColor: "#fff",
+  },
 });
 export default repCounter;
