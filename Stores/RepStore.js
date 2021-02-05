@@ -8,6 +8,7 @@ const RepStore = store({
   "Pull-ups": 0,
   "Sit-ups": 0,
   "Chin-ups": 0,
+  repGoal: 300,
 
   isHydrated: false,
   persistableFields: ["Push-ups", "Pull-ups", "Sit-ups", "Chin-ups"],
