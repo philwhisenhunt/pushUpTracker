@@ -11,7 +11,7 @@ const repCounter = view(({ title, buttonTitle, repType }) => {
         onPress={() => {
           RepStore.setReps(repType, reps + 1);
         }}
-        title={buttonTitle}
+        title={repType} //How can I add two piece of text here
         color="steelblue"
       />
       <Text style={styles.repCountingText}>
@@ -23,7 +23,8 @@ const repCounter = view(({ title, buttonTitle, repType }) => {
 
 const styles = StyleSheet.create({
   repCountingText: {
-    fontSize: 20,
+    fontSize: 60,
+    color: "white",
     // flex: 1,
     // backgroundColor: "#fff",
   },

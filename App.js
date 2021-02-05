@@ -26,35 +26,50 @@ export default view(function App() {
         <>
           <View style={styles.topBlock}>
             <Text style={styles.title}>Workout Tracker</Text>
-            <Text style={styles.subTitle}>Tap Each Button to add a rep</Text>
+            <Text style={styles.subTitle}>Track as you go</Text>
           </View>
           <View style={styles.middleBlock}>
             <RepCounter
               title="Push-up tracker"
-              buttonTitle="Log a push-up"
+              buttonTitle="Push-up"
               repType="Push-ups"
             />
             <RepCounter
               title="Pull-up tracker"
-              buttonTitle="Log a pull-up!"
+              buttonTitle="Pull-up!"
               repType="Pull-ups"
             />
             <RepCounter
               title="Chin-up tracker"
-              buttonTitle="Log a chin-up"
+              buttonTitle="Chin-up"
               repType="Chin-ups"
             />
             <RepCounter
               title="Sit-up tracker"
-              buttonTitle="Log a sit-up"
+              buttonTitle="Sit-up"
               repType="Sit-ups"
             />
+            <Text>Today's progress</Text>
             <View style={styles.giantDisplay}>
-              <Text>Today's progress</Text>
               <Text style={styles.totalRepsDisplay}>
                 {RepStore.totalReps} / {RepStore.repGoal}
               </Text>
             </View>
+          </View>
+          <View style={styles.fitToText}>
+            {/* <RepCounter
+              title="Sit-up tracker"
+              buttonTitle="Sit-up"
+              repType="Sit-ups"
+              style={styles.submitButton}
+            />
+            <Text>-</Text>
+            <RepCounter
+              title="Sit-up tracker"
+              buttonTitle="Sit-up"
+              repType="Sit-ups"
+              style={styles.submitButton}
+            /> */}
           </View>
           <View style={styles.fitToText}>
             <Button
@@ -97,7 +112,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 40,
-    color: "steelblue",
+    color: "white",
     paddingTop: 0,
   },
   subTitle: {
@@ -107,10 +122,11 @@ const styles = StyleSheet.create({
   },
   topBlock: {
     flex: 0.2,
-    backgroundColor: "black",
+    backgroundColor: "skyblue",
     justifyContent: "center",
     alignItems: "center",
-    borderWidth: 10,
+    color: "white",
+    // borderWidth: 10,
   },
   middleBlock: {
     flex: 2,
@@ -140,12 +156,16 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   totalRepsDisplay: {
-    fontSize: 40,
+    fontSize: 140,
+    color: "white",
   },
   giantDisplay: {
-    fontSize: 30,
+    fontSize: 40,
     flexDirection: "row",
     justifyContent: "center",
-    backgroundColor: "white",
+    backgroundColor: "skyblue",
+  },
+  innerText: {
+    color: "white",
   },
 });
