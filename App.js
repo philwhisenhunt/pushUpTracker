@@ -77,7 +77,7 @@ export default view(function App() {
                 const data = await getStuff();
                 setExerciseInfo(data);
               }}
-              title="Test APII"
+              title="Test API"
               style={styles.submitButton}
               color="black"
             />
