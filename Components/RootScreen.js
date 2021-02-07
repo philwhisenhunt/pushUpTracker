@@ -15,9 +15,13 @@ const RootScreen = view(() => {
   const [exerciseInfo, setExerciseInfo] = useState({});
   const [serverResponse, setServerResponse] = useState({});
   const navigation = useNavigation();
+  // const navigateToScreen = () => {
+  //   // alert("Sanity check");
+  //   navigation.navigate("Loading");
+  // };
   const navigateToScreen = () => {
     // alert("Sanity check");
-    navigation.navigate("Loading");
+    navigation.navigate("Goal");
   };
 
   // return <LoadingScreen />;
@@ -103,7 +107,7 @@ const RootScreen = view(() => {
               title="Save workout"
             />
             <Button
-              title="Go to screen"
+              title="Goal"
               onPress={navigateToScreen}
               style={styles.button}
             />
