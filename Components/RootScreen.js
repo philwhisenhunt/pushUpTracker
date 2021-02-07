@@ -24,6 +24,10 @@ const RootScreen = view(() => {
     navigation.navigate("Goal");
   };
 
+  const navigateToProfile = () => {
+    navigation.navigate("Profile")
+  }
+
   // return <LoadingScreen />;
   return (
     <View style={styles.container}>
@@ -110,6 +114,12 @@ const RootScreen = view(() => {
               title="Goal"
               onPress={navigateToScreen}
               style={styles.button}
+            />
+
+            <Button 
+            title="Profile"
+            onPress={navigateToProfile}
+            style={styles.button}
             />
           </View>
 
