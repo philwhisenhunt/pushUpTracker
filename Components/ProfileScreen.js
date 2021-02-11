@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
-const LoadingScreen = () => {
+const ProfileScreen = () => {
   return (
     <View style={styles.blueBackground}>
       <View style={styles.loadingBoxTop}>

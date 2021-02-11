@@ -6,6 +6,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import RootScreen from "./Components/RootScreen";
 import LoadingScreen from "./Components/LoadingScreen";
 import GoalScreen from "./Components/GoalScreen";
+import ProfileScreen from "./Components/ProfileScreen";
 
 const DefaultStack = createStackNavigator();
 
@@ -22,7 +23,7 @@ const App = () => {
         />
         <DefaultStack.Screen name="Loading" component={LoadingScreen} />
         <DefaultStack.Screen name="Goal" component={GoalScreen} />
-
+        <DefaultStack.Screen name="Profile" component={ProfileScreen} />
       </DefaultStack.Navigator>
     </NavigationContainer>
   );
