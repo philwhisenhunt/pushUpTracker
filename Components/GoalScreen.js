@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
 const LoadingScreen = () => {
+    const showAlert = () => {
+        alert("Sanity check")
+    }
   return (
+
     <View style={styles.blueBackground}>
       <View style={styles.loadingBoxTop}>
         <Text style={styles.innerText}>Current: 300</Text>
       </View>
       <View style={styles.loadingBoxBottom}>
         <Text style={styles.innerText}>Goal: 300</Text>
+        <Button title="Save"
+        onPress = {showAlert}/>
       </View>
     </View>
   );
