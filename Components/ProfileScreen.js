@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   },
   loadingBoxBottom: {
     flexDirection: "row",
-    backgroundColor: "black",
+    backgroundColor: "white",
     justifyContent: "center",
     flex: 0.5,
   },
