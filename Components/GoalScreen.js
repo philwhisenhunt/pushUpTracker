@@ -13,12 +13,12 @@ const LoadingScreen = () => {
         <Text style={styles.innerText}>Current: 300</Text>
       </View>
       <View style={styles.loadingBoxBottom}>
-        <Text style={styles.innerText}>Goal: 300</Text>
-        <Text style={styles.innerText}>New Goal?</Text>
+        {/* <Text style={styles.innerText}>Goal: 300</Text> */}
+        {/* <Text style={styles.innerText}>New Goal?</Text> */}
         
         <TextInput
         style={{height: 40}}
-        placeholder="Type new goal here"
+        placeholder="Goal: 300"
         onChangeText={text => setText(text)}
         defaultValue={text}
         />
