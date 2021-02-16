@@ -2,29 +2,27 @@ import React, { useState } from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
 const LoadingScreen = () => {
-    const showAlert = () => {
-        alert("Sanity check")
-    }
-    const [text, setText] = useState('')
+  const showAlert = () => {
+    alert("Pretending to save");
+  };
+  const [text, setText] = useState("");
   return (
-
     <View style={styles.blueBackground}>
       <View style={styles.loadingBoxTop}>
-        <Text style={styles.innerText}>Current: 300</Text>
+        <Text style={styles.innerText}>Current: 300 out of {text}</Text>
       </View>
       <View style={styles.loadingBoxBottom}>
         {/* <Text style={styles.innerText}>Goal: 300</Text> */}
         {/* <Text style={styles.innerText}>New Goal?</Text> */}
-        
+        <Text style={styles.blackText}>Goal:</Text>
         <TextInput
-        style={{height: 40}}
-        placeholder="Goal: 300"
-        onChangeText={text => setText(text)}
-        defaultValue={text}
+          style={styles.blackText}
+          placeholder="Goal: 300"
+          onChangeText={(text) => setText(text)}
+          defaultValue={text}
         />
-        <Button title="Save"
-        onPress = {showAlert}/>
       </View>
+      <Button title="Save" onPress={showAlert} />
     </View>
   );
 };
@@ -33,7 +31,17 @@ export default LoadingScreen;
 const styles = StyleSheet.create({
   innerText: {
     color: "white",
-    fontSize: 100,
+    fontSize: 80,
+    justifyContent: "center",
+  },
+  whiteText: {
+    color: "white",
+    fontSize: 80,
+    justifyContent: "center",
+  },
+  blackText: {
+    color: "black",
+    fontSize: 80,
     justifyContent: "center",
   },
   blueBackground: {
@@ -49,7 +57,7 @@ const styles = StyleSheet.create({
   },
   loadingBoxBottom: {
     flexDirection: "row",
-    backgroundColor: "black",
+    backgroundColor: "white",
     justifyContent: "center",
     flex: 0.5,
   },
