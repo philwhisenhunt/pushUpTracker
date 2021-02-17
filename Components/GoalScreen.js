@@ -17,7 +17,7 @@ const LoadingScreen = () => {
         <Text style={styles.blackText}>Goal:</Text>
         <TextInput
           style={styles.blackText}
-          placeholder="Goal: 300"
+          placeholder="300"
           onChangeText={(text) => setText(text)}
           defaultValue={text}
         />
@@ -41,8 +41,8 @@ const styles = StyleSheet.create({
   },
   blackText: {
     color: "black",
-    fontSize: 80,
-    justifyContent: "center",
+    fontSize: 50,
+    justifyContent: "flex-start",
   },
   blueBackground: {
     backgroundColor: "skyblue",
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
   loadingBoxBottom: {
     flexDirection: "row",
     backgroundColor: "white",
-    justifyContent: "center",
+    justifyContent: "flex-start",
     flex: 0.5,
   },
 });
