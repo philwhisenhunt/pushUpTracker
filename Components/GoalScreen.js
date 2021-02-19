@@ -46,6 +46,11 @@ const styles = StyleSheet.create({
     fontSize: 50,
     justifyContent: "flex-start",
   },
+  goalText: {
+    color: "black",
+    fontSize: 40,
+    justifyContent: "flex-start",
+  },
   blueBackground: {
     backgroundColor: "skyblue",
     flex: 1,
