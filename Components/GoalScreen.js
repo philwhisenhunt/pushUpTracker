@@ -9,11 +9,6 @@ const LoadingScreen = () => {
   return (
     <View style={styles.blueBackground}>
       <View style={styles.loadingBoxTop}>
-        <Text style={styles.blackText}>Current: </Text>
-
-        <Text style={styles.blackText}>300 out of {text}</Text>
-      </View>
-      <View style={styles.loadingBoxBottom}>
         {/* <Text style={styles.innerText}>Goal: 300</Text> */}
         {/* <Text style={styles.innerText}>New Goal?</Text> */}
         <Text style={styles.blackText}>Goal:</Text>
@@ -51,6 +46,12 @@ const styles = StyleSheet.create({
     fontSize: 40,
     justifyContent: "flex-start",
   },
+  bigText: {
+    color: "black",
+    fontSize: 40,
+    justifyContent: "flex-start",
+  },
+
   blueBackground: {
     backgroundColor: "skyblue",
     flex: 1,
