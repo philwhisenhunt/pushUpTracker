@@ -11,7 +11,7 @@ const LoadingScreen = () => {
       <View style={styles.loadingBoxTop}>
         {/* <Text style={styles.innerText}>Goal: 300</Text> */}
         {/* <Text style={styles.innerText}>New Goal?</Text> */}
-        <Text style={styles.blackText}>Goal:</Text>
+        <Text style={styles.innerText}>Goal:</Text>
         <TextInput
           style={styles.blackText}
           placeholder="300"
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   },
   blackText: {
     color: "black",
-    fontSize: 50,
+    fontSize: 120,
     justifyContent: "flex-start",
   },
   goalText: {
