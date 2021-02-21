@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
+import { TextInput } from "react-native-gesture-handler";
 const ProfileScreen = () => {
   return (
     <View style={styles.blueBackground}>
-      <View style={styles.loadingBoxTop}>
+      <View style={styles.fullPage}>
         <Text style={styles.innerText}>Profile Screen here</Text>
       </View>
+      <TextInput style={styles.innerText}>Name</TextInput>
+      <TextInput style={styles.innerText}>Height</TextInput>
+      <TextInput style={styles.innerText}>Weight</TextInput>
     </View>
   );
 };
@@ -14,7 +18,7 @@ export default ProfileScreen;
 const styles = StyleSheet.create({
   innerText: {
     color: "white",
-    fontSize: 100,
+    fontSize: 50,
     justifyContent: "center",
   },
   blueBackground: {
@@ -33,5 +37,8 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     justifyContent: "center",
     flex: 0.5,
+  },
+  fullPage: {
+    backgroundColor: "black",
   },
 });
