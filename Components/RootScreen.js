@@ -123,9 +123,9 @@ const RootScreen = view(() => {
             />
           </View>
 
-          <Text>Rep Count: {exerciseInfo.rep_count}</Text>
+          {/* <Text>Rep Count: {exerciseInfo.rep_count}</Text>
           <Text>What the server sent back: {serverResponse.rep_count}</Text>
-          <Text>Total reps: {RepStore.totalReps}</Text>
+          <Text>Total reps: {RepStore.totalReps}</Text> */}
         </>
       )}
     </View>
