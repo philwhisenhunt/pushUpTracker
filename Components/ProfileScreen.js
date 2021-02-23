@@ -39,6 +39,6 @@ const styles = StyleSheet.create({
     flex: 0.5,
   },
   fullPage: {
-    backgroundColor: "black",
+    backgroundColor: "skyblue",
   },
 });
