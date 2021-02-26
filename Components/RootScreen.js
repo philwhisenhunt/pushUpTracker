@@ -10,6 +10,7 @@ import { view } from "@risingstack/react-easy-state";
 import RepStore from "../Stores/RepStore";
 import RepCounter from "../Components/RepCounter";
 import { useNavigation, useRoute } from "@react-navigation/native";
+import { saveStuff } from "../src/saveStuff";
 
 const RootScreen = view(() => {
   const [exerciseInfo, setExerciseInfo] = useState({});
@@ -98,14 +99,19 @@ const RootScreen = view(() => {
               /> */}
             <Button
               onPress={async () => {
+                // alert(RepStore["Push-up"]);
+                // return;
                 const data = await saveStuff(
                   "http://localhost:3000/exercise_sets.json",
                   {
-                    rep_count: "12",
-                    weight: 120,
-                    exercise_type: "kettlebell rows",
+                    exercises: {
+                      push_ups: RepStore["Push-up"],
+                      pull_ups: RepStore["Pull-up"],
+                      sit_ups: RepStore["Sit-up"],
+                    },
                   }
                 );
+                alert(JSON.stringify(data));
                 setServerResponse(data);
               }}
               title="Save workout"
