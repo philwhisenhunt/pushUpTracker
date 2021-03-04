@@ -16,12 +16,8 @@ const RootScreen = view(() => {
   const [exerciseInfo, setExerciseInfo] = useState({});
   const [serverResponse, setServerResponse] = useState({});
   const navigation = useNavigation();
-  // const navigateToScreen = () => {
-  //   // alert("Sanity check");
-  //   navigation.navigate("Loading");
-  // };
+
   const navigateToScreen = () => {
-    // alert("Sanity check");
     navigation.navigate("Goal");
   };
 
