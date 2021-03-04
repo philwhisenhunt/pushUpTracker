@@ -101,6 +101,9 @@ const RootScreen = view(() => {
                   "http://localhost:3000/exercise_sets.json",
                   {
                     exercises: {
+                      //How to prep for other custom exercises added here?
+                      //For example, have a custom workout created for this day
+                      //take in user's preferences too?
                       push_ups: RepStore["Push-up"],
                       pull_ups: RepStore["Pull-up"],
                       sit_ups: RepStore["Sit-up"],
