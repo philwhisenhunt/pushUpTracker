@@ -36,10 +36,7 @@ const RootScreen = view(() => {
       )}
       {RepStore.isHydrated === true && (
         <>
-          <View style={styles.topBlock}>
-            {/* <Text style={styles.title}>Workout Tracker</Text> */}
-            <Text style={styles.subTitle}>Tap each button to record a rep</Text>
-          </View>
+          <View style={styles.topBlock}></View>
           <View style={styles.middleBlock}>
             <RepCounter
               title="Push-up tracker"
