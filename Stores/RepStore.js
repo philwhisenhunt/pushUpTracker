@@ -9,12 +9,32 @@ const RepStore = store({
   "Sit-up": 0,
   "Chin-up": 0,
   repGoal: 300,
+  updated_at: null,
 
   isHydrated: false,
   persistableFields: ["Push-up", "Pull-up", "Sit-up", "Chin-up"],
 
   setReps(name, count) {
     this[name] = count;
+    this.updated_at = new Date();
+  },
+
+  resetCheck() {
+    //Grab the current time
+    console.log(this.updated_at);
+    const now = new Date();
+
+    //compare it to the updated_at piece of RepStore
+    // console.log();
+    if (datesAreOnSameDay(now, this.updated_at)) {
+      alert("Let it be");
+    } else {
+      alert("whole new day, so reset");
+      this.setReps("Push-up", 0);
+      this.setReps("Pull-up", 0);
+      this.setReps("Sit-up", 0);
+      this.setReps("Chin-up", 0);
+    }
   },
 
   get totalReps() {
@@ -45,3 +65,8 @@ observe(() => {
   AsyncStorage.setItem("REP_STORE", JSON.stringify(RepStore));
 });
 export default RepStore;
+
+const datesAreOnSameDay = (first, second) =>
+  first.getFullYear() === second.getFullYear() &&
+  first.getMonth() === second.getMonth() &&
+  first.getDate() === second.getDate();
