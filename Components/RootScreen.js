@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import {
   View,
   Text,
   Button,
   StyleSheet,
   ActivityIndicator,
+  AppState,
 } from "react-native";
 import { view } from "@risingstack/react-easy-state";
 import RepStore from "../Stores/RepStore";
@@ -63,6 +64,7 @@ const RootScreen = view(() => {
               <Text style={styles.totalRepsDisplay}>
                 {RepStore.totalReps} / {RepStore.repGoal}
               </Text>
+              <Text>{RepStore.updated_at.toString()}</Text>
             </View>
           </View>
           <View style={styles.fitToText}>
