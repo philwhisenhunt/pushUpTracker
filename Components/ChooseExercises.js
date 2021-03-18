@@ -7,7 +7,7 @@ const ChooseExercises = () => {
       <Text>Push-ups</Text>
       <Text>Sit-ups</Text>
       <Text>Chin-ups</Text>
-      <Text>Add exercise</Text>
+      <TextInput>Add exercise</TextInput>
     </View>
   );
 };
