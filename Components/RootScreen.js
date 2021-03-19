@@ -26,6 +26,10 @@ const RootScreen = view(() => {
     navigation.navigate("Profile");
   };
 
+  const navigateToChooseExercises = () => {
+    navigation.navigate("Choose Exercises");
+  };
+
   // return <LoadingScreen />;
   return (
     <View style={styles.container}>
@@ -123,6 +127,12 @@ const RootScreen = view(() => {
             <Button
               title="Profile"
               onPress={navigateToProfile}
+              style={styles.button}
+            />
+
+            <Button
+              title="Choose Exercises"
+              onPress={navigateToChooseExercises}
               style={styles.button}
             />
           </View>

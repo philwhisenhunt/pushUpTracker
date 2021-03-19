@@ -9,6 +9,7 @@ import LoadingScreen from "./Components/LoadingScreen";
 import GoalScreen from "./Components/GoalScreen";
 import ProfileScreen from "./Components/ProfileScreen";
 import RepStore from "./Stores/RepStore";
+import ChooseExercises from "./Components/ChooseExercises";
 
 const DefaultStack = createStackNavigator();
 
@@ -51,6 +52,10 @@ const App = () => {
         <DefaultStack.Screen name="Loading" component={LoadingScreen} />
         <DefaultStack.Screen name="Goal" component={GoalScreen} />
         <DefaultStack.Screen name="Profile" component={ProfileScreen} />
+        <DefaultStack.Screen
+          name="Choose Exercises"
+          component={ChooseExercises}
+        />
       </DefaultStack.Navigator>
     </NavigationContainer>
   );
