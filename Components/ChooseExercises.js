@@ -1,4 +1,6 @@
 import { View, Text, Button, StyleSheet } from "react-native";
+import React from "react";
+import { TextInput } from "react-native-gesture-handler";
 
 const ChooseExercises = () => {
   return (
@@ -21,3 +23,4 @@ const styles = StyleSheet.create({
 //Use touchablewithoutfeedback?
 //https://reactnative.dev/docs/touchablewithoutfeedback
 //Add ability to add and remove stuff
+//Would each block of text have to be in a view or different type of component?
