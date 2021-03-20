@@ -9,7 +9,12 @@ const ChooseExercises = () => {
       <Text>Push-ups</Text>
       <Text>Sit-ups</Text>
       <Text>Chin-ups</Text>
-      <TextInput>Add exercise</TextInput>
+      <TextInput 
+      placeholder="Add exercise"
+      onChangeText={(text) => setText(text)}>
+        
+      </TextInput>
+       
     </View>
   );
 };
