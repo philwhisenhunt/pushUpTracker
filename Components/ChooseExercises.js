@@ -1,5 +1,5 @@
 import { View, Text, Button, StyleSheet } from "react-native";
-import React, { useState} from "react";
+import React, { useState } from "react";
 import { TextInput } from "react-native-gesture-handler";
 
 const ChooseExercises = () => {
@@ -8,13 +8,14 @@ const ChooseExercises = () => {
       <Text>Add or remove exercises</Text>
       <Text>Push-ups</Text>
       <Text>Sit-ups</Text>
-      <Text>Chin-ups</Text>
-      <TextInput 
-      placeholder="Add exercise"
-      onChangeText={(text) => setText(text)}>
-
-      </TextInput>
-       
+      <TextInput
+        placeholder="Chin-ups"
+        onChangeText={(text) => setText(text)}
+      ></TextInput>
+      <TextInput
+        placeholder="Add exercise"
+        onChangeText={(text) => setText(text)}
+      ></TextInput>
     </View>
   );
 };
