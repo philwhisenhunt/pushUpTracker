@@ -6,10 +6,13 @@ const ChooseExercises = () => {
   return (
     <View style={StyleSheet.blueBackground}>
       <Text>Add or remove exercises</Text>
-      <Text>Push-ups</Text>
-      <Text placeholder="Sit-ups" onChangeText={(text) => setText(text)}>
+      <TextInput
+        placeholder="Push-ups"
+        onChangeText={(text) => setText(text)}
+      ></TextInput>
+      <TextInput placeholder="Sit-ups" onChangeText={(text) => setText(text)}>
         Sit-ups
-      </Text>
+      </TextInput>
       <TextInput
         placeholder="Chin-ups"
         onChangeText={(text) => setText(text)}
