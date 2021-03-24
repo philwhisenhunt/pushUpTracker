@@ -7,6 +7,7 @@ const ChooseExercises = () => {
     <View style={StyleSheet.blueBackground}>
       <Text>Add or remove exercises</Text>
       <TextInput
+      style ={StyleSheet.blackText}
         placeholder="Push-ups"
         onChangeText={(text) => setText(text)}
       ></TextInput>
@@ -29,6 +30,11 @@ const styles = StyleSheet.create({
   blueBackground: {
     backgroundColor: "skyblue",
     flex: 1,
+  },
+  blackText: {
+    color: "black",
+    fontSize: 120,
+    justifyContent: "flex-start",
   },
 });
 //Use touchablewithoutfeedback?
