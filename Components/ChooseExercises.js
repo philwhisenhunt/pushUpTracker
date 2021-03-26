@@ -2,6 +2,7 @@ import { View, Text, Button, StyleSheet } from "react-native";
 import React, { useState } from "react";
 import { TextInput } from "react-native-gesture-handler";
 
+const [text, setText] = useState("");
 const ChooseExercises = () => {
   return (
     <View style={StyleSheet.blueBackground}>
