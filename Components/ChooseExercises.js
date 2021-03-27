@@ -8,11 +8,15 @@ const ChooseExercises = () => {
     <View style={StyleSheet.blueBackground}>
       <Text>Add or remove exercises</Text>
       <TextInput
-      style ={StyleSheet.blackText}
+        style={StyleSheet.blackText}
         placeholder="Push-ups"
         onChangeText={(text) => setText(text)}
       ></TextInput>
-      <TextInput placeholder="Sit-ups" onChangeText={(text) => setText(text)}>
+      <TextInput
+        style={StyleSheet.blackText}
+        placeholder="Sit-ups"
+        onChangeText={(text) => setText(text)}
+      >
         Sit-ups
       </TextInput>
       <TextInput
