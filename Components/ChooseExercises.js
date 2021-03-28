@@ -11,6 +11,7 @@ const ChooseExercises = () => {
         style={StyleSheet.blackText}
         placeholder="Push-ups"
         onChangeText={(text) => setText(text)}
+        defaultValue={text}
       ></TextInput>
       <TextInput
         style={StyleSheet.blackText}
