@@ -130,11 +130,11 @@ const RootScreen = view(() => {
               style={styles.button}
             />
 
-            {/* <Button
+            <Button
               title="Choose Exercise"
               onPress={navigateToChooseExercises}
               style={styles.button}
-            /> */}
+            />
           </View>
 
           {/* <Text>Rep Count: {exerciseInfo.rep_count}</Text>

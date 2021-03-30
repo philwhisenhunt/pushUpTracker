@@ -52,10 +52,10 @@ const App = () => {
         <DefaultStack.Screen name="Loading" component={LoadingScreen} />
         <DefaultStack.Screen name="Goal" component={GoalScreen} />
         <DefaultStack.Screen name="Profile" component={ProfileScreen} />
-        {/* <DefaultStack.Screen
+        <DefaultStack.Screen
           name="Choose Exercises"
           component={ChooseExercises}
-        /> */}
+        />
       </DefaultStack.Navigator>
     </NavigationContainer>
   );
