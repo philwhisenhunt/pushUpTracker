@@ -2,32 +2,33 @@ import { View, Text, Button, StyleSheet } from "react-native";
 import React, { useState } from "react";
 import { TextInput } from "react-native-gesture-handler";
 
-// const [text, setText] = useState("");
+const [text, setText] = useState("");
 const ChooseExercises = () => {
   return (
     <View style={StyleSheet.blueBackground}>
-      {/* //       <Text>Add or remove exercises</Text> */}
-      {/* //       <TextInput
-  //         style={StyleSheet.blackText}
-  //         placeholder="Push-ups"
-  //         onChangeText={(text) => setText(text)}
-  //         defaultValue={text}
-  //       ></TextInput>
-  //       <TextInput
-  //         style={StyleSheet.blackText}
-  //         placeholder="Sit-ups"
-  //         onChangeText={(text) => setText(text)}
-  //       >
-  //         Sit-ups
-  //       </TextInput>
-  //       <TextInput
-  //         placeholder="Chin-ups"
-  //         onChangeText={(text) => setText(text)}
-  //       ></TextInput>
-  //       <TextInput
-  //         placeholder="Add exercise"
-  //         onChangeText={(text) => setText(text)}
-  //       ></TextInput> */}
+      <Text>Add or remove exercises</Text>
+
+      <TextInput
+        style={StyleSheet.blackText}
+        placeholder="Push-ups"
+        onChangeText={(text) => setText(text)}
+        defaultValue={text}
+      ></TextInput>
+      {/* <TextInput
+        style={StyleSheet.blackText}
+        placeholder="Sit-ups"
+        onChangeText={(text) => setText(text)}
+      >
+        Sit-ups
+      </TextInput>
+      <TextInput
+        placeholder="Chin-ups"
+        onChangeText={(text) => setText(text)}
+      ></TextInput>
+      <TextInput
+        placeholder="Add exercise"
+        onChangeText={(text) => setText(text)}
+      ></TextInput> */}
     </View>
   );
 };
