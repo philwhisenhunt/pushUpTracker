@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { TextInput } from "react-native-gesture-handler";
 
 const [text, setText] = useState("");
+const [text2, setText2] = useState("");
+
 const ChooseExercises = () => {
   return (
     <View style={StyleSheet.blueBackground}>
@@ -14,14 +16,12 @@ const ChooseExercises = () => {
         onChangeText={(text) => setText(text)}
         defaultValue={text}
       ></TextInput>
-      {/* <TextInput
+      <TextInput
         style={StyleSheet.blackText}
         placeholder="Sit-ups"
-        onChangeText={(text) => setText(text)}
-      >
-        Sit-ups
-      </TextInput>
-      <TextInput
+        onChangeText={(text2) => setText2(text)}
+      ></TextInput>
+      {/* <TextInput
         placeholder="Chin-ups"
         onChangeText={(text) => setText(text)}
       ></TextInput>
