@@ -8,7 +8,7 @@ const ChooseExercises = () => {
   const [text3, setText3] = useState("");
   return (
     <View style={StyleSheet.blueBackground}>
-      <Text>Add or remove exercises</Text>
+      <Text>Add or remove exercises:</Text>
 
       <TextInput
         style={StyleSheet.blackText}
@@ -16,7 +16,7 @@ const ChooseExercises = () => {
         onChangeText={(text) => setText(text)}
         defaultValue={text}
       ></TextInput>
-      <TextInput
+      {/* <TextInput
         style={StyleSheet.blackText}
         placeholder="Sit-ups"
         onChangeText={(text2) => setText2(text2)}
@@ -24,7 +24,7 @@ const ChooseExercises = () => {
       <TextInput
         placeholder="Chin-ups"
         onChangeText={(text3) => setText3(text3)}
-      ></TextInput>
+      ></TextInput> */}
       {/* <TextInput
         placeholder="Add exercise"
         onChangeText={(text) => setText(text)}
@@ -40,8 +40,9 @@ const styles = StyleSheet.create({
   },
   blackText: {
     color: "black",
-    fontSize: 120,
+    fontSize: 200,
     justifyContent: "flex-start",
+    flex: 1,
   },
 });
 // //Use touchablewithoutfeedback?
