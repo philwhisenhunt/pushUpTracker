@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
+import RepStore from "../Stores/RepStore";
+
 const LoadingScreen = () => {
   const showAlert = () => {
     alert("Pretending to save");
@@ -20,6 +22,14 @@ const LoadingScreen = () => {
         />
       </View>
       <Button title="Save" onPress={showAlert} />
+      <Button
+        onPress={() => {
+          RepStore.setReps("repGoal", text);
+        }}
+        color="steelblue"
+        title="Push it"
+      />
+      <Text>{RepStore.repGoal}</Text>
     </View>
   );
 };
