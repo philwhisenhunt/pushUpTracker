@@ -16,19 +16,19 @@ const ChooseExercises = () => {
         onChangeText={(text) => setText(text)}
         defaultValue={text}
       ></TextInput>
-      {/* <TextInput
+      <TextInput
         style={StyleSheet.blackText}
         placeholder="Sit-ups"
-        onChangeText={(text2) => setText2(text2)}
+        onChangeText={(text) => setText(text)}
       ></TextInput>
       <TextInput
         placeholder="Chin-ups"
-        onChangeText={(text3) => setText3(text3)}
-      ></TextInput> */}
-      {/* <TextInput
+        onChangeText={(text) => setText(text)}
+      ></TextInput>
+      <TextInput
         placeholder="Add exercise"
         onChangeText={(text) => setText(text)}
-      ></TextInput> */}
+      ></TextInput>
     </View>
   );
 };
@@ -37,6 +37,8 @@ const styles = StyleSheet.create({
   blueBackground: {
     backgroundColor: "skyblue",
     flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
   blackText: {
     color: "black",
