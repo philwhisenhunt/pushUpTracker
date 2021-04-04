@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
   },
   blackText: {
     color: "black",
-    fontSize: 200,
+    fontSize: 20,
     justifyContent: "flex-start",
     flex: 1,
   },
