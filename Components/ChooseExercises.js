@@ -9,27 +9,12 @@ const ChooseExercises = () => {
   return (
     <View style={styles.container}>
       <View style={styles.blueBackground}>
-        <Text>Add or remove exercises:</Text>
+        <Text style={styles.blackText}>Add exercise:</Text>
+        {/* How to display all exercises here? */}
 
         <TextInput
           style={styles.blackText}
-          placeholder="Push-ups"
-          onChangeText={(text) => setText(text)}
-          defaultValue={text}
-        ></TextInput>
-        <TextInput
-          style={styles.blackText}
-          placeholder="Sit-ups"
-          onChangeText={(text) => setText(text)}
-        ></TextInput>
-        <TextInput
-          style={styles.blackText}
-          placeholder="Chin-ups"
-          onChangeText={(text) => setText(text)}
-        ></TextInput>
-        <TextInput
-          style={styles.blackText}
-          placeholder="Add exercise"
+          placeholder="i.e. Kettlebell Swings"
           onChangeText={(text) => setText(text)}
         ></TextInput>
       </View>
@@ -47,11 +32,11 @@ const styles = StyleSheet.create({
     backgroundColor: "skyblue",
     flex: 1,
     justifyContent: "flex-start",
-    alignItems: "center",
+    alignItems: "flex-start",
   },
   blackText: {
     color: "black",
-    fontSize: 50,
+    fontSize: 30,
     justifyContent: "flex-start",
     alignItems: "center",
   },
