@@ -23,10 +23,12 @@ const ChooseExercises = () => {
           onChangeText={(text) => setText(text)}
         ></TextInput>
         <TextInput
+          style={styles.blackText}
           placeholder="Chin-ups"
           onChangeText={(text) => setText(text)}
         ></TextInput>
         <TextInput
+          style={styles.blackText}
           placeholder="Add exercise"
           onChangeText={(text) => setText(text)}
         ></TextInput>
@@ -44,14 +46,14 @@ const styles = StyleSheet.create({
   blueBackground: {
     backgroundColor: "skyblue",
     flex: 1,
-    justifyContent: "center",
+    justifyContent: "flex-start",
     alignItems: "center",
   },
   blackText: {
     color: "black",
-    fontSize: 20,
+    fontSize: 50,
     justifyContent: "flex-start",
-    flex: 1,
+    alignItems: "center",
   },
 });
 // //Use touchablewithoutfeedback?
