@@ -68,7 +68,6 @@ const RootScreen = view(() => {
               <Text style={styles.totalRepsDisplay}>
                 {RepStore.totalReps} / {RepStore.repGoal}
               </Text>
-              <Text>{RepStore.updated_at.toString()}</Text>
             </View>
           </View>
           <View style={styles.fitToText}>
