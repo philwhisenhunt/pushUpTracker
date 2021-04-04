@@ -63,28 +63,14 @@ const RootScreen = view(() => {
               buttonTitle="Sit-up"
               repType="Sit-up"
             />
-            {/* <Text>Today's progress</Text> */}
+
             <View style={styles.giantDisplay}>
               <Text style={styles.totalRepsDisplay}>
                 {RepStore.totalReps} / {RepStore.repGoal}
               </Text>
             </View>
           </View>
-          <View style={styles.fitToText}>
-            {/* <RepCounter
-                title="Sit-up tracker"
-                buttonTitle="Sit-up"
-                repType="Sit-ups"
-                style={styles.submitButton}
-              />
-              <Text>-</Text>
-              <RepCounter
-                title="Sit-up tracker"
-                buttonTitle="Sit-up"
-                repType="Sit-ups"
-                style={styles.submitButton}
-              /> */}
-          </View>
+
           <View style={styles.fitToText}>
             {/* <Button
                 onPress={async () => {
