@@ -7,33 +7,40 @@ const ChooseExercises = () => {
   const [text2, setText2] = useState("");
   const [text3, setText3] = useState("");
   return (
-    <View style={StyleSheet.blueBackground}>
-      <Text>Add or remove exercises:</Text>
+    <View style={styles.container}>
+      <View style={styles.blueBackground}>
+        <Text>Add or remove exercises:</Text>
 
-      <TextInput
-        style={StyleSheet.blackText}
-        placeholder="Push-ups"
-        onChangeText={(text) => setText(text)}
-        defaultValue={text}
-      ></TextInput>
-      <TextInput
-        style={StyleSheet.blackText}
-        placeholder="Sit-ups"
-        onChangeText={(text) => setText(text)}
-      ></TextInput>
-      <TextInput
-        placeholder="Chin-ups"
-        onChangeText={(text) => setText(text)}
-      ></TextInput>
-      <TextInput
-        placeholder="Add exercise"
-        onChangeText={(text) => setText(text)}
-      ></TextInput>
+        <TextInput
+          style={styles.blackText}
+          placeholder="Push-ups"
+          onChangeText={(text) => setText(text)}
+          defaultValue={text}
+        ></TextInput>
+        <TextInput
+          style={styles.blackText}
+          placeholder="Sit-ups"
+          onChangeText={(text) => setText(text)}
+        ></TextInput>
+        <TextInput
+          placeholder="Chin-ups"
+          onChangeText={(text) => setText(text)}
+        ></TextInput>
+        <TextInput
+          placeholder="Add exercise"
+          onChangeText={(text) => setText(text)}
+        ></TextInput>
+      </View>
     </View>
   );
 };
 export default ChooseExercises;
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "black",
+  },
+
   blueBackground: {
     backgroundColor: "skyblue",
     flex: 1,
