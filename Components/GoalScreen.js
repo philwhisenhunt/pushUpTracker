@@ -8,6 +8,7 @@ const LoadingScreen = () => {
     alert("Pretending to save");
   };
   const [text, setText] = useState("");
+  // const text = RepStore["repGoal"];
   return (
     <View style={styles.blueBackground}>
       <View style={styles.loadingBoxTop}>
