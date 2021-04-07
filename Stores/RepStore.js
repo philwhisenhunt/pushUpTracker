@@ -19,6 +19,11 @@ const RepStore = store({
     this.updated_at = new Date();
   },
 
+  setGoal(count) {
+    this.repGoal = count;
+    this.updated_at = new Date();
+  },
+
   resetCheck() {
     //Grab the current time
     console.log(this.updated_at);
