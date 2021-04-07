@@ -30,7 +30,7 @@ const LoadingScreen = () => {
         color="steelblue"
         title="Push it"
       />
-      <Text>{RepStore.repGoal}</Text>
+      <Text>{text}</Text>
     </View>
   );
 };
