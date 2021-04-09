@@ -25,12 +25,12 @@ const LoadingScreen = () => {
       <Button title="Save" onPress={showAlert} />
       <Button
         onPress={() => {
-          RepStore.setReps("repGoal", text);
+          RepStore.setGoal(text);
         }}
         color="steelblue"
         title="Push it"
       />
-      <Text>{text}</Text>
+      <Text>{RepStore.repGoal}</Text>
     </View>
   );
 };
