@@ -17,7 +17,7 @@ const LoadingScreen = () => {
         <Text style={styles.innerText}>Goal:</Text>
         <TextInput
           style={styles.blackText}
-          placeholder="300"
+          placeholder={RepStore.repGoal}
           onChangeText={(text) => setText(text)}
           defaultValue={text}
         />
