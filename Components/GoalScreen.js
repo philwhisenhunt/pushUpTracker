@@ -11,26 +11,30 @@ const LoadingScreen = () => {
   // const text = RepStore["repGoal"];
   return (
     <View style={styles.blueBackground}>
-      <View style={styles.loadingBoxTop}>
-        {/* <Text style={styles.innerText}>Goal: 300</Text> */}
-        {/* <Text style={styles.innerText}>New Goal?</Text> */}
-        <Text style={styles.innerText}>Goal:</Text>
-        <TextInput
-          style={styles.blackText}
-          placeholder={RepStore.repGoal}
-          onChangeText={(text) => setText(text)}
-          defaultValue={text}
-        />
-      </View>
-      <Button title="Save" onPress={showAlert} />
-      <Button
-        onPress={() => {
-          RepStore.setGoal(text);
-        }}
-        color="steelblue"
-        title="Push it"
-      />
-      <Text>{RepStore.repGoal}</Text>
+      {RepStore.isHydrated === true && (
+        <>
+          <View style={styles.loadingBoxTop}>
+            {/* <Text style={styles.innerText}>Goal: 300</Text> */}
+            {/* <Text style={styles.innerText}>New Goal?</Text> */}
+            <Text style={styles.innerText}>Goal:</Text>
+            <TextInput
+              style={styles.blackText}
+              placeholder={RepStore.repGoal}
+              onChangeText={(text) => setText(text)}
+              defaultValue={text}
+            />
+          </View>
+          <Button title="Save" onPress={showAlert} />
+          <Button
+            onPress={() => {
+              RepStore.setGoal(text);
+            }}
+            color="steelblue"
+            title="Push it"
+          />
+          <Text>{RepStore.repGoal}</Text>
+        </>
+      )}
     </View>
   );
 };
