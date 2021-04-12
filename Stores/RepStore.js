@@ -54,6 +54,7 @@ export const hydrate = async () => {
   for (const [key, value] of Object.entries(data)) {
     if (RepStore.persistableFields.includes(key)) {
       RepStore.setReps(key, value);
+      // RepStore.setGoal(count);
     }
   }
   RepStore.isHydrated = true;
