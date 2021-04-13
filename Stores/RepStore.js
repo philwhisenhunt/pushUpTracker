@@ -12,7 +12,7 @@ const RepStore = store({
   updated_at: null,
 
   isHydrated: false,
-  persistableFields: ["Push-up", "Pull-up", "Sit-up", "Chin-up"],
+  persistableFields: ["Push-up", "Pull-up", "Sit-up", "Chin-up", repGoal],
 
   setReps(name, count) {
     this[name] = count;
@@ -54,7 +54,7 @@ export const hydrate = async () => {
   for (const [key, value] of Object.entries(data)) {
     if (RepStore.persistableFields.includes(key)) {
       RepStore.setReps(key, value);
-      // RepStore.setGoal(count);
+      RepStore.setGoal(key);
     }
   }
   RepStore.isHydrated = true;
