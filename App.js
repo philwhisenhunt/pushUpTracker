@@ -10,6 +10,7 @@ import GoalScreen from "./Components/GoalScreen";
 import ProfileScreen from "./Components/ProfileScreen";
 import RepStore from "./Stores/RepStore";
 import ChooseExercises from "./Components/ChooseExercises";
+import LoginScreen from "./Components/LoginScreen";
 
 const DefaultStack = createStackNavigator();
 
@@ -56,6 +57,7 @@ const App = () => {
           name="Choose Exercises"
           component={ChooseExercises}
         />
+        <DefaultStack.Screen name="Login" component={LoginScreen} />
       </DefaultStack.Navigator>
     </NavigationContainer>
   );

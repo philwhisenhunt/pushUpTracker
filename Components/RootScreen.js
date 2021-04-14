@@ -30,6 +30,10 @@ const RootScreen = view(() => {
     navigation.navigate("Choose Exercises");
   };
 
+  const navigateToLogin = () => {
+    navigation.navigate("Login");
+  };
+
   // return <LoadingScreen />;
   return (
     <View style={styles.container}>
@@ -69,6 +73,11 @@ const RootScreen = view(() => {
                 {RepStore.totalReps} / {RepStore.repGoal}
               </Text>
             </View>
+            <Button
+              title="Login Link"
+              style={styles.button}
+              onPress={navigateToLogin}
+            ></Button>
           </View>
 
           <View style={styles.fitToText}>
