@@ -107,10 +107,6 @@ const RootScreen = view(() => {
               style={styles.button}
             />
           </View>
-
-          {/* <Text>Rep Count: {exerciseInfo.rep_count}</Text>
-          <Text>What the server sent back: {serverResponse.rep_count}</Text>
-          <Text>Total reps: {RepStore.totalReps}</Text> */}
         </>
       )}
     </View>
@@ -151,17 +147,8 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "steelblue",
   },
-  // wideButton: {
-  //   flex: 1,
-  //   backgroundColor: "coral",
-  //   alignItems: "center",
-  //   justifyContent: "center",
-  //   alignSelf: "stretch",
-  //   maxHeight: 100,
-  // },
+
   submitButton: {
-    // flex: 0.5,
-    // margin: 100,
     padding: 10,
     margin: 10,
   },
