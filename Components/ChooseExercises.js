@@ -5,9 +5,7 @@ import RepStore from "../Stores/RepStore";
 
 const ChooseExercises = () => {
   const [text, setText] = useState("");
-  const [text2, setText2] = useState("");
-  const [text3, setText3] = useState("");
-  const listy = ["Bounce", "Upthrow", "Dance"];
+
   return (
     <View style={styles.container}>
       <View style={styles.blueBackground}>
@@ -17,7 +15,7 @@ const ChooseExercises = () => {
         <Text style={styles.blackText}>---</Text>
 
         <Text style={styles.blackText}>Add exercise:</Text>
-        {/* How to display all exercises here? */}
+
         <TextInput
           style={styles.blackText}
           placeholder="i.e. Kettlebell Swings"
