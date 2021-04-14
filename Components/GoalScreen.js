@@ -5,7 +5,8 @@ import RepStore from "../Stores/RepStore";
 
 const LoadingScreen = () => {
   const showAlert = () => {
-    alert("Pretending to save");
+    const texter = RepStore.repGoal;
+    alert("The goal is now: " + texter);
   };
   const [text, setText] = useState("");
   // const text = RepStore["repGoal"];
