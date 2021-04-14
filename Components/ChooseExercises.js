@@ -6,9 +6,11 @@ const ChooseExercises = () => {
   const [text, setText] = useState("");
   const [text2, setText2] = useState("");
   const [text3, setText3] = useState("");
+  const listy = ["Bounce", "Upthrow", "Dance"];
   return (
     <View style={styles.container}>
       <View style={styles.blueBackground}>
+        <Text style={styles.blackText}>{listy[1]}</Text>
         <Text style={styles.blackText}>Add exercise:</Text>
         {/* How to display all exercises here? */}
 
