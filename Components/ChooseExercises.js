@@ -9,6 +9,7 @@ const ChooseExercises = () => {
   return (
     <View style={styles.container}>
       <View style={styles.blueBackground}>
+        <Text style={styles.blackText}>Current exercises:</Text>
         {RepStore.persistableFields.map((n) => (
           <Text style={styles.blackText}>{n}</Text>
         ))}
