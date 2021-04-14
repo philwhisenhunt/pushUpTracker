@@ -12,7 +12,7 @@ import RepStore from "../Stores/RepStore";
 const LoadingScreen = () => {
   const showAlert = () => {
     const texter = RepStore.repGoal;
-    alert("The goal is now: " + texter);
+    console.log("The goal is now: " + texter);
   };
   const [text, setText] = useState("");
   // const text = RepStore["repGoal"];
@@ -46,7 +46,8 @@ const LoadingScreen = () => {
             color="steelblue"
             title="Push it"
           />
-          <Text>{goalz}</Text>
+          <Text>Goal is now:</Text>
+          <Text>{RepStore.repGoal}</Text>
         </>
       )}
     </View>
