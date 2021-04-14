@@ -14,6 +14,8 @@ const ChooseExercises = () => {
         {RepStore.persistableFields.map((n) => (
           <Text style={styles.blackText}>{n}</Text>
         ))}
+        <Text style={styles.blackText}>---</Text>
+
         <Text style={styles.blackText}>Add exercise:</Text>
         {/* How to display all exercises here? */}
         <TextInput
