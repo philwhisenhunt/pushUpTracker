@@ -33,7 +33,7 @@ const LoadingScreen = () => {
             <Text style={styles.innerText}>Goal:</Text>
             <TextInput
               style={styles.blackText}
-              placeholder={goalz}
+              placeholder={goalz.toString()}
               onChangeText={(text) => setText(text)}
               defaultValue={text}
             />
