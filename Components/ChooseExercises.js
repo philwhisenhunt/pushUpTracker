@@ -1,6 +1,7 @@
 import { View, Text, Button, StyleSheet } from "react-native";
 import React, { useState } from "react";
 import { TextInput } from "react-native-gesture-handler";
+import RepStore from "../Stores/RepStore";
 
 const ChooseExercises = () => {
   const [text, setText] = useState("");
@@ -11,9 +12,10 @@ const ChooseExercises = () => {
     <View style={styles.container}>
       <View style={styles.blueBackground}>
         <Text style={styles.blackText}>{listy[1]}</Text>
+        <Text style={styles.blackText}>{RepStore.persistableFields}</Text>
+
         <Text style={styles.blackText}>Add exercise:</Text>
         {/* How to display all exercises here? */}
-
         <TextInput
           style={styles.blackText}
           placeholder="i.e. Kettlebell Swings"
