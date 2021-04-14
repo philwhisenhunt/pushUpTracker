@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { View, Text, Button, StyleSheet } from "react-native";
+import {
+  View,
+  Text,
+  Button,
+  StyleSheet,
+  ActivityIndicator,
+} from "react-native";
 import { TextInput } from "react-native-gesture-handler";
 import RepStore from "../Stores/RepStore";
 
@@ -10,8 +16,15 @@ const LoadingScreen = () => {
   };
   const [text, setText] = useState("");
   // const text = RepStore["repGoal"];
+  const goalz = RepStore["repGoal"];
   return (
     <View style={styles.blueBackground}>
+      {RepStore.isHydrated === false && (
+        <>
+          <ActivityIndicator size="large" animating={true} />
+          <Text>Please wait, loading...</Text>
+        </>
+      )}
       {RepStore.isHydrated === true && (
         <>
           <View style={styles.loadingBoxTop}>
@@ -20,7 +33,7 @@ const LoadingScreen = () => {
             <Text style={styles.innerText}>Goal:</Text>
             <TextInput
               style={styles.blackText}
-              placeholder="300"
+              placeholder={goalz}
               onChangeText={(text) => setText(text)}
               defaultValue={text}
             />
@@ -33,7 +46,7 @@ const LoadingScreen = () => {
             color="steelblue"
             title="Push it"
           />
-          <Text>{RepStore.repGoal}</Text>
+          <Text>{goalz}</Text>
         </>
       )}
     </View>
