@@ -11,9 +11,9 @@ const ChooseExercises = () => {
   return (
     <View style={styles.container}>
       <View style={styles.blueBackground}>
-        <Text style={styles.blackText}>{listy[1]}</Text>
-        <Text style={styles.blackText}>{RepStore.persistableFields}</Text>
-
+        {RepStore.persistableFields.map((n) => (
+          <Text style={styles.blackText}>{n}</Text>
+        ))}
         <Text style={styles.blackText}>Add exercise:</Text>
         {/* How to display all exercises here? */}
         <TextInput
