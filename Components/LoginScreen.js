@@ -25,18 +25,18 @@ export default class LoginScreen extends React.Component {
             <TextInput
               style={styles.inputText}
               placeholder="Password"
-              placeholderTextColor="#003f5c"
+              placeholderTextColor="#003f5"
               onChangeText={(text) => this.setState({ password: text })}
             />
 
             <TouchableOpacity style={styles.loginBtn}>
-              <Text style={styles.loginText}>LOGIN</Text>
+              <Text style={styles.loginText}>Login</Text>
             </TouchableOpacity>
             <TouchableOpacity>
               <Text style={styles.forgot}>Forgot Password?</Text>
             </TouchableOpacity>
             <TouchableOpacity>
-              <Text style={styles.loginText}>Signup</Text>
+              <Text style={styles.forgot}>Signup</Text>
             </TouchableOpacity>
           </View>
           {/* <View style={styles.inputView}>
@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "black",
   },
   loginContainer: {
     flex: 1,
@@ -70,7 +71,7 @@ const styles = StyleSheet.create({
     marginBottom: 40,
     justifyContent: "center",
     padding: 0,
-    width: "80%",
+    width: "90%",
   },
   headlineContainer: {
     flex: 1,
@@ -81,7 +82,7 @@ const styles = StyleSheet.create({
   },
   blueContainer: {
     flex: 3,
-    backgroundColor: "grey",
+    backgroundColor: "black",
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
@@ -104,14 +105,19 @@ const styles = StyleSheet.create({
   },
   inputText: {
     height: 50,
-    fontSize: 40,
+    fontSize: 20,
+    backgroundColor: "white",
+    padding: 10,
+    margin: 20,
+    borderRadius: 25,
+    width: 300,
   },
   forgot: {
     color: "white",
     fontSize: 11,
   },
   loginBtn: {
-    width: "80%",
+    width: 300,
     backgroundColor: "white",
     borderRadius: 25,
     height: 50,
@@ -119,5 +125,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     marginTop: 40,
     marginBottom: 10,
+  },
+  loginText: {
+    fontSize: 20,
   },
 });
