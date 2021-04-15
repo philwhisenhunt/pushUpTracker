@@ -57,7 +57,13 @@ const App = () => {
           name="Choose Exercises"
           component={ChooseExercises}
         />
-        <DefaultStack.Screen name="Login" component={LoginScreen} />
+        <DefaultStack.Screen
+          name="Login"
+          component={LoginScreen}
+          options={{
+            headerShown: false, // change this to `false`
+          }}
+        />
       </DefaultStack.Navigator>
     </NavigationContainer>
   );
