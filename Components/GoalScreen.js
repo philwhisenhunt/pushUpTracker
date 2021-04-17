@@ -8,8 +8,12 @@ import {
 } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
 import RepStore from "../Stores/RepStore";
-
+import { useNavigation, useRoute } from "@react-navigation/native";
 const LoadingScreen = () => {
+  const navigation = useNavigation();
+  const navigateToRootScreen = () => {
+    navigation.navigate("Goal");
+  };
   const showAlert = () => {
     const texter = RepStore.repGoal;
     console.log("The goal is now: " + texter);
@@ -42,6 +46,7 @@ const LoadingScreen = () => {
           <Button
             onPress={() => {
               RepStore.setGoal(text);
+              // navigateToRootScreen();
             }}
             color="steelblue"
             title="Push it"
