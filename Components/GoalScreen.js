@@ -44,10 +44,8 @@ const LoadingScreen = () => {
           </View>
           <Button title="Save" onPress={showAlert} />
           <Button
-            onPress={() => {
-              RepStore.setGoal(text);
-              // navigateToRootScreen();
-            }}
+            // onPress={navigateToRootScreen}
+            onPress={RepStore.setGoal(text)}
             color="steelblue"
             title="Push it"
           />
