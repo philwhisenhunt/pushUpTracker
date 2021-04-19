@@ -37,9 +37,8 @@ const LoadingScreen = () => {
             <Text style={styles.innerText}>Goal:</Text>
             <TextInput
               style={styles.blackText}
-              placeholder={goalz.toString()}
+              placeholder={RepStore.repGoal}
               onChangeText={(text) => setText(text)}
-              defaultValue={text}
             />
           </View>
           <Button title="Save" onPress={showAlert} />
