@@ -36,7 +36,7 @@ export default class LoginScreen extends React.Component {
               <Text style={styles.forgot}>Forgot Password?</Text>
             </TouchableOpacity>
             <TouchableOpacity>
-              <Text style={styles.forgot}>Signup</Text>
+              <Text style={styles.signup}>Signup</Text>
             </TouchableOpacity>
           </View>
           {/* <View style={styles.inputView}>
@@ -113,6 +113,11 @@ const styles = StyleSheet.create({
     width: 300,
   },
   forgot: {
+    color: "white",
+    fontSize: 11,
+  },
+
+  signup: {
     color: "white",
     fontSize: 11,
   },
