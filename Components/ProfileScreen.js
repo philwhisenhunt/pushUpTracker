@@ -4,13 +4,11 @@ import { TextInput } from "react-native-gesture-handler";
 const ProfileScreen = () => {
   return (
     <View style={styles.blueBackground}>
-      <View style={styles.fullPage}>
-        <Text style={styles.innerText}>Profile Screen here</Text>
-      </View>
-      <TextInput style={styles.innerText}>Name</TextInput>
-      <TextInput style={styles.innerText}>Height</TextInput>
-      <TextInput style={styles.innerText}>Weight</TextInput>
-      <TextInput style={styles.innerText}>Goal Weight</TextInput>
+      <View style={styles.fullPage}></View>
+      <TextInput style={styles.innerText}>Name: </TextInput>
+      <TextInput style={styles.innerText}>Height: </TextInput>
+      <TextInput style={styles.innerText}>Weight: </TextInput>
+      <TextInput style={styles.innerText}>Goal Weight: </TextInput>
     </View>
   );
 };
