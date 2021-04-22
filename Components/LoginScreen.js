@@ -16,6 +16,7 @@ export default class LoginScreen extends React.Component {
             <Text style={styles.titles}>Workout Tracker</Text>
           </View>
           <View style={styles.blueContainer}>
+            <Text>One rep at a time</Text>
             <TextInput
               style={styles.inputText}
               placeholder="Email"
