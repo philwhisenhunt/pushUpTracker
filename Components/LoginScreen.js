@@ -15,7 +15,7 @@ export default class LoginScreen extends React.Component {
           <View style={styles.headlineContainer}>
             <Text style={styles.titles}>Workout Tracker</Text>
           </View>
-          <View style={styles.blueContainer}>
+          <View style={styles.subtitle}>
             <Text>One rep at a time</Text>
             <TextInput
               style={styles.inputText}
@@ -134,5 +134,8 @@ const styles = StyleSheet.create({
   },
   loginText: {
     fontSize: 20,
+  },
+  subtitle: {
+    fontSize: 16,
   },
 });
