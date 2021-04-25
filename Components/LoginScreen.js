@@ -134,6 +134,7 @@ const styles = StyleSheet.create({
   },
   loginText: {
     fontSize: 20,
+    color: "white",
   },
   subtitle: {
     fontSize: 16,
