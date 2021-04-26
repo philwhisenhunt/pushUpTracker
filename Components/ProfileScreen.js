@@ -5,7 +5,9 @@ const ProfileScreen = () => {
   return (
     <View style={styles.blueBackground}>
       <View style={styles.fullPage}></View>
-      <TextInput style={styles.innerText}>Name: </TextInput>
+      <TextInput style={styles.innerText} defaultValue="Name:">
+        {" "}
+      </TextInput>
       <TextInput style={styles.innerText}>Height: </TextInput>
       <TextInput style={styles.innerText}>Weight: </TextInput>
       <TextInput style={styles.innerText}>Goal Weight: </TextInput>
