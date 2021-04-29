@@ -7,8 +7,8 @@ const ProfileScreen = () => {
       <View style={styles.fullPage}></View>
       <TextInput style={styles.innerText} placeholder="Name"></TextInput>
       <TextInput style={styles.innerText} placeholder="Height"></TextInput>
-      <TextInput style={styles.innerText}>Weight: </TextInput>
-      <TextInput style={styles.innerText}>Goal Weight: </TextInput>
+      <TextInput style={styles.innerText} placeholder="Weight"></TextInput>
+      <TextInput style={styles.innerText} placeholder="Goal Weight"></TextInput>
     </View>
   );
 };
