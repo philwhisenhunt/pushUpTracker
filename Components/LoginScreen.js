@@ -17,20 +17,20 @@ export default class LoginScreen extends React.Component {
           </View>
           <View style={styles.subtitle}>
             <Text>One rep at a time</Text>
-            <TextInput
-              style={styles.inputText}
-              placeholder="Email"
-              placeholderTextColor="#003f5"
-              onChangeText={(text) => this.setState({ email: text })}
-            />
-            <TextInput
-              style={styles.inputText}
-              placeholder="Password"
-              placeholderTextColor="#003f5"
-              onChangeText={(text) => this.setState({ password: text })}
-            />
           </View>
         </View>
+        <TextInput
+          style={styles.inputText}
+          placeholder="Email"
+          placeholderTextColor="#003f5"
+          onChangeText={(text) => this.setState({ email: text })}
+        />
+        <TextInput
+          style={styles.inputText}
+          placeholder="Password"
+          placeholderTextColor="#003f5"
+          onChangeText={(text) => this.setState({ password: text })}
+        />
         <TouchableOpacity style={styles.loginBtn}>
           <Text style={styles.loginText}>Login</Text>
         </TouchableOpacity>
