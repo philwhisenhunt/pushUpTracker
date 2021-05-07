@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
   },
 
   signup: {
-    color: "black",
+    color: "white",
     fontSize: 11,
   },
   loginBtn: {
@@ -123,6 +123,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     marginTop: 40,
     marginBottom: 10,
+    // paddingBottom: 20,
   },
   loginText: {
     fontSize: 20,
