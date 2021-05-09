@@ -17,7 +17,7 @@ export default ProfileScreen;
 const styles = StyleSheet.create({
   innerText: {
     color: "white",
-    fontSize: 50,
+    fontSize: 30,
     justifyContent: "center",
   },
   blueBackground: {
