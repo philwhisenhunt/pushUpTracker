@@ -9,6 +9,7 @@ const ProfileScreen = () => {
       <TextInput style={styles.innerText} placeholder="Height"></TextInput>
       <TextInput style={styles.innerText} placeholder="Weight"></TextInput>
       <TextInput style={styles.innerText} placeholder="Goal Weight"></TextInput>
+      <Button>Update</Button>
     </View>
   );
 };
