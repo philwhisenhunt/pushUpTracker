@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
+import { Text, Button, withStyles, Avatar } from "react-native-ui-kitten";
+
 const ProfileScreen = () => {
   return (
     <View style={styles.blueBackground}>
       <View style={styles.fullPage}></View>
+      <Avatar></Avatar>
       <TextInput style={styles.innerText} placeholder="Name"></TextInput>
       <TextInput style={styles.innerText} placeholder="Height"></TextInput>
       <TextInput style={styles.innerText} placeholder="Weight"></TextInput>
