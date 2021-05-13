@@ -35,10 +35,11 @@ const LoginScreen = ({ navigation }) => {
         placeholderTextColor="#666"
         onChangeText={(text) => this.setState({ password: text })}
       />
-      <TouchableOpacity style={styles.loginBtn}>
-        <Text style={styles.loginText} onPress={() => navigation.popToTop()}>
-          Login
-        </Text>
+      <TouchableOpacity
+        style={styles.loginBtn}
+        onPress={() => navigation.popToTop()}
+      >
+        <Text style={styles.loginText}>Login</Text>
       </TouchableOpacity>
       <TouchableOpacity>
         <Text style={styles.forgot}>Forgot Password?</Text>
