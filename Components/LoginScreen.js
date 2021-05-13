@@ -12,23 +12,22 @@ export default class LoginScreen extends React.Component {
     return (
       <View style={styles.container}>
         <View style={styles.loginContainer}>
-          <View style={styles.headlineContainer}>
-            <Text style={styles.titles}>Workout Tracker</Text>
-          </View>
+          <Text style={styles.titles}>Workout Tracker</Text>
+
           <View style={styles.subtitle}>
-            <Text>One rep at a time</Text>
+            <Text style={styles.subtitleText}>One rep at a time</Text>
           </View>
         </View>
         <TextInput
           style={styles.inputText}
           placeholder="Email"
-          TextColor="#003f5"
+          placeholderTextColor="#666"
           onChangeText={(text) => this.setState({ email: text })}
         />
         <TextInput
           style={styles.inputText}
           placeholder="Password"
-          placeholderTextColor="#003f5"
+          placeholderTextColor="#666"
           onChangeText={(text) => this.setState({ password: text })}
         />
         <TouchableOpacity style={styles.loginBtn}>
@@ -52,26 +51,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "black",
   },
-  loginContainer: {
-    flex: 1,
-    // backgroundColor: "white",
-    // alignItems: "center",
-    // justifyContent: "center",
-    // width: "80%",
-    backgroundColor: "black",
-    // borderRadius: 25,
-    height: 50,
-    marginBottom: 40,
-    justifyContent: "center",
-    padding: 0,
-    width: "90%",
-  },
+  loginContainer: {},
   headlineContainer: {
-    flex: 1,
-    backgroundColor: "black",
+    flex: 2,
     alignItems: "center",
     justifyContent: "center",
-    width: "100%",
   },
   blueContainer: {
     flex: 3,
@@ -101,6 +85,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     backgroundColor: "white",
     padding: 10,
+    paddingLeft: 20,
     margin: 20,
     borderRadius: 25,
     width: 300,
@@ -116,20 +101,24 @@ const styles = StyleSheet.create({
   },
   loginBtn: {
     width: 300,
-    backgroundColor: "white",
+    backgroundColor: "black",
     borderRadius: 25,
+    borderWidth: 5,
+    borderColor: "white",
     height: 50,
     alignItems: "center",
     justifyContent: "center",
     marginTop: 40,
     marginBottom: 10,
-    // paddingBottom: 20,
   },
   loginText: {
     fontSize: 20,
-    color: "black",
+    color: "white",
   },
   subtitle: {
+    paddingTop: 20,
+  },
+  subtitleText: {
     fontSize: 16,
     color: "white",
   },
