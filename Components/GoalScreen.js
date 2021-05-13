@@ -22,7 +22,8 @@ const LoadingScreen = () => {
     <View style={styles.blueBackground}>
       <Text>Goal: {goalNumber}</Text>
       <TextInput
-        placeholder={"00"}
+        style={styles.innerText}
+        placeholder={"Enter New Goal Here"}
         onChangeText={onChangeGoalNumber}
         onSubmitEditing={() => {
           RepStore.setGoal(goalNumber);
@@ -36,7 +37,7 @@ export default LoadingScreen;
 const styles = StyleSheet.create({
   innerText: {
     color: "white",
-    fontSize: 80,
+    fontSize: 40,
     justifyContent: "center",
   },
   whiteText: {
