@@ -8,15 +8,13 @@ import {
   Button,
 } from "react-native";
 import { useNavigation, useRoute } from "@react-navigation/native";
-
 // const navigation = useNavigation();
-// const navigateToRoot = () => {
-//   navigation.navigate("Root");
-// };
-// const navigateToRoot = () => {
-//   navigation.navigate("Home");
-// };
-const LoginScreen = () => {
+const navigateToHome = () => {
+  console.log("in HOME function");
+
+  navigation.navigate("ROOT");
+};
+const LoginScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.loginContainer}>
@@ -38,7 +36,9 @@ const LoginScreen = () => {
         onChangeText={(text) => this.setState({ password: text })}
       />
       <TouchableOpacity style={styles.loginBtn}>
-        <Text style={styles.loginText}>Login</Text>
+        <Text style={styles.loginText} onPress={() => navigation.popToTop()}>
+          Login
+        </Text>
       </TouchableOpacity>
       <TouchableOpacity>
         <Text style={styles.forgot}>Forgot Password?</Text>

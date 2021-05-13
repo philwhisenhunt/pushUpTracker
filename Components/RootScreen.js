@@ -31,7 +31,14 @@ const RootScreen = view(() => {
   };
 
   const navigateToLogin = () => {
+    console.log("in Login function");
     navigation.navigate("Login");
+  };
+
+  const navigateToHome = () => {
+    console.log("in HOME function");
+
+    navigation.navigate("ROOT");
   };
 
   // return <LoadingScreen />;
