@@ -11,6 +11,8 @@ import ProfileScreen from "./Components/ProfileScreen";
 import RepStore from "./Stores/RepStore";
 import ChooseExercises from "./Components/ChooseExercises";
 import LoginScreen from "./Components/LoginScreen";
+// import * as eva from "@eva-design/eva";
+// import { ApplicationProvider, Layout, Text } from "@ui-kitten/components";
 
 const DefaultStack = createStackNavigator();
 
@@ -41,6 +43,7 @@ const App = () => {
   };
 
   return (
+    // <ApplicationProvider {...eva} theme={eva.light}>
     <NavigationContainer>
       <DefaultStack.Navigator>
         <DefaultStack.Screen
@@ -66,6 +69,7 @@ const App = () => {
         />
       </DefaultStack.Navigator>
     </NavigationContainer>
+    // </ApplicationProvider>
   );
 };
 
