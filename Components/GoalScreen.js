@@ -14,46 +14,8 @@ const LoadingScreen = () => {
   const navigateToRootScreen = () => {
     navigation.navigate("Goal");
   };
-  const showAlert = () => {
-    const texter = RepStore.repGoal;
-    console.log("The goal is now: " + texter);
-  };
-  const [text, setText] = useState("");
-  // const text = RepStore["repGoal"];
-  const goalz = RepStore["repGoal"];
-  return (
-    <View style={styles.blueBackground}>
-      {RepStore.isHydrated === false && (
-        <>
-          <ActivityIndicator size="large" animating={true} />
-          <Text>Please wait, loading...</Text>
-        </>
-      )}
-      {RepStore.isHydrated === true && (
-        <>
-          <View style={styles.loadingBoxTop}>
-            {/* <Text style={styles.innerText}>Goal: 300</Text> */}
-            {/* <Text style={styles.innerText}>New Goal?</Text> */}
-            <Text style={styles.innerText}>Goal:</Text>
-            <TextInput
-              style={styles.blackText}
-              placeholder={RepStore.repGoal}
-              onChangeText={(text) => setText(text)}
-            />
-          </View>
-          <Button title="Save" onPress={showAlert} />
-          <Button
-            // onPress={navigateToRootScreen}
-            onPress={RepStore.setGoal(text)}
-            color="steelblue"
-            title="Push it"
-          />
-          <Text>Goal is now:</Text>
-          <Text>{RepStore.repGoal}</Text>
-        </>
-      )}
-    </View>
-  );
+
+  return <View style={styles.blueBackground}></View>;
 };
 
 export default LoadingScreen;
