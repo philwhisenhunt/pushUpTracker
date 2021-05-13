@@ -20,8 +20,12 @@ const RepStore = store({
   },
 
   setGoal(count) {
+    console.log("Made it into setGoal, and the count is: " + count);
+    // debugger;
+
     this.repGoal = count;
     this.updated_at = new Date();
+    console.log("The repGoal is: " + this.repGoal);
   },
 
   resetCheck() {
@@ -66,7 +70,7 @@ hydrate();
 
 // Observe every change made to repStore and saving it to local storage.
 observe(() => {
-  console.log("Got into observe");
+  // console.log("Got into observe");
   AsyncStorage.setItem("REP_STORE", JSON.stringify(RepStore));
 });
 export default RepStore;

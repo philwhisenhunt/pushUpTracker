@@ -14,8 +14,22 @@ const LoadingScreen = () => {
   const navigateToRootScreen = () => {
     navigation.navigate("Goal");
   };
+  // const goalNumber = 0;
 
-  return <View style={styles.blueBackground}></View>;
+  const [goalNumber, onChangeGoalNumber] = React.useState(null);
+
+  return (
+    <View style={styles.blueBackground}>
+      <Text>Goal: {goalNumber}</Text>
+      <TextInput
+        placeholder={"00"}
+        onChangeText={onChangeGoalNumber}
+        onSubmitEditing={() => {
+          RepStore.setGoal(goalNumber);
+        }}
+      ></TextInput>
+    </View>
+  );
 };
 
 export default LoadingScreen;
