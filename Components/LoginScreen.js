@@ -8,12 +8,7 @@ import {
   Button,
 } from "react-native";
 import { useNavigation, useRoute } from "@react-navigation/native";
-// const navigation = useNavigation();
-const navigateToHome = () => {
-  console.log("in HOME function");
 
-  navigation.navigate("ROOT");
-};
 const LoginScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
@@ -37,7 +32,7 @@ const LoginScreen = ({ navigation }) => {
       />
       <TouchableOpacity
         style={styles.loginBtn}
-        onPress={() => navigation.popToTop()}
+        onPress={() => navigation.navigate("Home")}
       >
         <Text style={styles.loginText}>Login</Text>
       </TouchableOpacity>
