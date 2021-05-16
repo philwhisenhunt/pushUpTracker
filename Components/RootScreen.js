@@ -151,7 +151,7 @@ const styles = StyleSheet.create({
     backgroundColor: "skyblue",
     justifyContent: "center",
     alignItems: "center",
-    color: "white",
+    color: "black",
     // borderWidth: 10,
   },
   middleBlock: {
