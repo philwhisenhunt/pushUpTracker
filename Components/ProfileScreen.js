@@ -5,7 +5,7 @@ import { TextInput } from "react-native-gesture-handler";
 
 const ProfileScreen = () => {
   return (
-    <View style={styles.blueBackground}>
+    <View style={styles.blackBackground}>
       <View style={styles.fullPage}></View>
       {/* <Avatar></Avatar> */}
       <TextInput style={styles.innerText} placeholder="Name"></TextInput>
@@ -24,8 +24,8 @@ const styles = StyleSheet.create({
     fontSize: 30,
     justifyContent: "center",
   },
-  blueBackground: {
-    backgroundColor: "skyblue",
+  blackBackground: {
+    backgroundColor: "black",
     flex: 1,
   },
   loadingBoxTop: {
