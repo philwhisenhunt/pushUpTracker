@@ -8,6 +8,7 @@ const ProfileScreen = () => {
     <View style={styles.blackBackground}>
       <View style={styles.fullPage}></View>
       {/* <Avatar></Avatar> */}
+      <Text style={styles.innerText}>Name:</Text>
       <TextInput style={styles.innerText} placeholder="Name"></TextInput>
       <TextInput style={styles.innerText} placeholder="Height"></TextInput>
       <TextInput style={styles.innerText} placeholder="Weight"></TextInput>
@@ -28,20 +29,20 @@ const styles = StyleSheet.create({
     backgroundColor: "black",
     flex: 1,
   },
-  loadingBoxTop: {
-    flexDirection: "row",
-    backgroundColor: "skyblue",
-    justifyContent: "center",
-    flex: 0.5,
-    // alignSelf: "flex-end",
-  },
-  loadingBoxBottom: {
-    flexDirection: "row",
-    backgroundColor: "white",
-    justifyContent: "center",
-    flex: 0.5,
-  },
-  fullPage: {
-    backgroundColor: "skyblue",
-  },
+  // loadingBoxTop: {
+  //   flexDirection: "row",
+  //   backgroundColor: "skyblue",
+  //   justifyContent: "center",
+  //   flex: 0.5,
+  //   // alignSelf: "flex-end",
+  // },
+  // loadingBoxBottom: {
+  //   flexDirection: "row",
+  //   backgroundColor: "white",
+  //   justifyContent: "center",
+  //   flex: 0.5,
+  // },
+  // fullPage: {
+  //   backgroundColor: "skyblue",
+  // },
 });
