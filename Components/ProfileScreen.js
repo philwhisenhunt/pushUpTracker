@@ -11,14 +11,26 @@ const ProfileScreen = () => {
       <TextInput
         style={styles.innerText}
         placeholderTextColor={"#666"}
-        placeholder="Name"
+        placeholder="First and Last"
       ></TextInput>
       <Text style={styles.innerText}>Height:</Text>
-      <TextInput style={styles.innerText} placeholder="Height"></TextInput>
+      <TextInput
+        style={styles.innerText}
+        placeholderTextColor={"#666"}
+        placeholder="Height"
+      ></TextInput>
       <Text style={styles.innerText}>Weight:</Text>
-      <TextInput style={styles.innerText} placeholder="Weight"></TextInput>
+      <TextInput
+        style={styles.innerText}
+        placeholderTextColor={"#666"}
+        placeholder="Weight"
+      ></TextInput>
       <Text style={styles.innerText}>Goal Weight:</Text>
-      <TextInput style={styles.innerText} placeholder="Goal Weight"></TextInput>
+      <TextInput
+        style={styles.innerText}
+        placeholderTextColor={"#666"}
+        placeholder="Goal Weight"
+      ></TextInput>
       <Button title="Update"></Button>
     </View>
   );
