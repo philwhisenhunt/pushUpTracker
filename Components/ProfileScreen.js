@@ -8,7 +8,11 @@ const ProfileScreen = () => {
       <View style={styles.fullPage}></View>
       {/* <Avatar></Avatar> */}
       <Text style={styles.innerText}>Name:</Text>
-      <TextInput style={styles.innerText} placeholder="Name"></TextInput>
+      <TextInput
+        style={styles.innerText}
+        placeholderTextColor={"#666"}
+        placeholder="Name"
+      ></TextInput>
       <Text style={styles.innerText}>Height:</Text>
       <TextInput style={styles.innerText} placeholder="Height"></TextInput>
       <Text style={styles.innerText}>Weight:</Text>
