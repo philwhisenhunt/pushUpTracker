@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
-// import { Avatar } from "react-native-ui-kitten";
 
 const ProfileScreen = () => {
   return (
@@ -10,8 +9,11 @@ const ProfileScreen = () => {
       {/* <Avatar></Avatar> */}
       <Text style={styles.innerText}>Name:</Text>
       <TextInput style={styles.innerText} placeholder="Name"></TextInput>
+      <Text style={styles.innerText}>Height:</Text>
       <TextInput style={styles.innerText} placeholder="Height"></TextInput>
+      <Text style={styles.innerText}>Weight:</Text>
       <TextInput style={styles.innerText} placeholder="Weight"></TextInput>
+      <Text style={styles.innerText}>Goal Weight:</Text>
       <TextInput style={styles.innerText} placeholder="Goal Weight"></TextInput>
       <Button title="Update"></Button>
     </View>
