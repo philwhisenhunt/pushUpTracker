@@ -171,6 +171,7 @@ const styles = StyleSheet.create({
   fitToText: {
     flexDirection: "row",
     justifyContent: "center",
+    backgroundColor: "skyblue",
   },
   totalRepsDisplay: {
     fontSize: 70,
