@@ -86,12 +86,6 @@ const RootScreen = view(() => {
               style={styles.button}
               onPress={navigateToLogin}
             ></Button> */}
-            <TouchableOpacity
-              style={styles.logoutButton}
-              onPress={navigateToLogin}
-            >
-              <Text style={styles.loginText}>Logout</Text>
-            </TouchableOpacity>
           </View>
 
           <View style={styles.fitToText}>
@@ -132,6 +126,9 @@ const RootScreen = view(() => {
           </View>
         </>
       )}
+      <TouchableOpacity style={styles.logoutButton} onPress={navigateToLogin}>
+        <Text style={styles.loginText}>Logout</Text>
+      </TouchableOpacity>
     </View>
   );
 });
@@ -199,16 +196,16 @@ const styles = StyleSheet.create({
     color: "green",
   },
   logoutButton: {
-    width: 300,
-    backgroundColor: "black",
+    // width: 300,
+    // backgroundColor: "black",
     // borderRadius: 25,
     // borderWidth: 5,
     borderColor: "white",
     height: 50,
     alignItems: "center",
     justifyContent: "center",
-    marginTop: 40,
-    marginBottom: 10,
+    // marginTop: 40,
+    // marginBottom: 10,
   },
   loginText: {
     fontSize: 20,
