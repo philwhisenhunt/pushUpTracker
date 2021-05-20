@@ -6,6 +6,7 @@ import {
   StyleSheet,
   ActivityIndicator,
   AppState,
+  TouchableOpacity,
 } from "react-native";
 import { view } from "@risingstack/react-easy-state";
 import RepStore from "../Stores/RepStore";
@@ -80,11 +81,17 @@ const RootScreen = view(() => {
                 {RepStore.totalReps} / {RepStore.repGoal}
               </Text>
             </View>
-            <Button
+            {/* <Button
               title="Login Link"
               style={styles.button}
               onPress={navigateToLogin}
-            ></Button>
+            ></Button> */}
+            <TouchableOpacity
+              style={styles.logoutButton}
+              onPress={navigateToLogin}
+            >
+              <Text style={styles.loginText}>Logout</Text>
+            </TouchableOpacity>
           </View>
 
           <View style={styles.fitToText}>
@@ -190,5 +197,21 @@ const styles = StyleSheet.create({
     margin: 50,
     backgroundColor: "green",
     color: "green",
+  },
+  logoutButton: {
+    width: 300,
+    backgroundColor: "black",
+    // borderRadius: 25,
+    // borderWidth: 5,
+    borderColor: "white",
+    height: 50,
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 40,
+    marginBottom: 10,
+  },
+  loginText: {
+    fontSize: 20,
+    color: "white",
   },
 });
