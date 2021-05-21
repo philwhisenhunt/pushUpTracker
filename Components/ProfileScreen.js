@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, Button, StyleSheet } from "react-native";
+import { View, Text, Button, StyleSheet, TouchableOpacity } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
 
 const ProfileScreen = () => {
@@ -31,7 +31,8 @@ const ProfileScreen = () => {
         placeholderTextColor={"#666"}
         placeholder="Goal Weight"
       ></TextInput>
-      <Button title="Update"></Button>
+      {/* <Button title="Update"></Button> */}
+      <TouchableOpacity>Update</TouchableOpacity>
     </View>
   );
 };
