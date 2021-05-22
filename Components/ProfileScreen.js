@@ -6,7 +6,7 @@ const ProfileScreen = () => {
   return (
     <View style={styles.blackBackground}>
       <View style={styles.fullPage}></View>
-      {/* <Avatar></Avatar> */}
+
       <Text style={styles.innerText}>Name:</Text>
       <TextInput
         style={styles.innerText}
