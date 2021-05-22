@@ -196,16 +196,10 @@ const styles = StyleSheet.create({
     color: "green",
   },
   logoutButton: {
-    // width: 300,
-    // backgroundColor: "black",
-    // borderRadius: 25,
-    // borderWidth: 5,
     borderColor: "white",
     height: 50,
     alignItems: "center",
     justifyContent: "center",
-    // marginTop: 40,
-    // marginBottom: 10,
   },
   loginText: {
     fontSize: 20,
