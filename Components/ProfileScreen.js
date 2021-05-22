@@ -32,7 +32,9 @@ const ProfileScreen = () => {
         placeholder="Goal Weight"
       ></TextInput>
       {/* <Button title="Update"></Button> */}
-      <TouchableOpacity>Update</TouchableOpacity>
+      <TouchableOpacity style={styles.logoutButton}>
+        <Text style={styles.logoutText}>Logout</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -48,20 +50,16 @@ const styles = StyleSheet.create({
     backgroundColor: "black",
     flex: 1,
   },
-  // loadingBoxTop: {
-  //   flexDirection: "row",
-  //   backgroundColor: "skyblue",
-  //   justifyContent: "center",
-  //   flex: 0.5,
-  //   // alignSelf: "flex-end",
-  // },
-  // loadingBoxBottom: {
-  //   flexDirection: "row",
-  //   backgroundColor: "white",
-  //   justifyContent: "center",
-  //   flex: 0.5,
-  // },
-  // fullPage: {
-  //   backgroundColor: "skyblue",
-  // },
+  logoutButton: {
+    borderColor: "white",
+    height: 50,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "white",
+    margin: 30,
+  },
+  logoutText: {
+    fontSize: 20,
+    color: "black",
+  },
 });
