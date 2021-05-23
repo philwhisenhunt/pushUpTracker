@@ -14,13 +14,12 @@ const LoadingScreen = () => {
   const navigateToRootScreen = () => {
     navigation.navigate("Goal");
   };
-  // const goalNumber = 0;
 
   const [goalNumber, onChangeGoalNumber] = React.useState(null);
 
   return (
     <View style={styles.blueBackground}>
-      <Text>Goal: {goalNumber}</Text>
+      <Text style={styles.innerText}>Goal: {goalNumber}</Text>
       <TextInput
         style={styles.innerText}
         placeholder={"Enter New Goal Here"}
