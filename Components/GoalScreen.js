@@ -17,6 +17,11 @@ const LoadingScreen = () => {
 
   const [goalNumber, onChangeGoalNumber] = React.useState(null);
 
+  // var nothing = "";
+  // nothing = () => {
+  //   Repstore.getGoal();
+  // };
+  // alert({Repstore.getGoal()});
   return (
     <View style={styles.blueBackground}>
       <Text style={styles.innerText}>Goal: {goalNumber}</Text>

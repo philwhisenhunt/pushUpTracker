@@ -19,6 +19,10 @@ const RepStore = store({
     this.updated_at = new Date();
   },
 
+  getGoal() {
+    console.log("Tests");
+  },
+
   setGoal(count) {
     console.log("Made it into setGoal, and the count is: " + count);
     // debugger;
