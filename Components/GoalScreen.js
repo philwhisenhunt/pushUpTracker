@@ -16,7 +16,9 @@ const LoadingScreen = () => {
   };
 
   const [goalNumber, onChangeGoalNumber] = React.useState(null);
-
+  // const retrievedNumber = () => {
+  //   Repstore.getGoal();
+  // };
   // var nothing = "";
   // nothing = () => {
   //   Repstore.getGoal();
@@ -25,6 +27,8 @@ const LoadingScreen = () => {
   return (
     <View style={styles.blueBackground}>
       <Text style={styles.innerText}>Goal: {goalNumber}</Text>
+      {/* <Text style={styles.innerText}>TEST: {retrievedNumber()}</Text> */}
+
       <TextInput
         style={styles.innerText}
         placeholder={"Enter New Goal Here"}
