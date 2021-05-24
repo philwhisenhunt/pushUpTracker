@@ -20,7 +20,8 @@ const RepStore = store({
   },
 
   getGoal() {
-    console.log("Tests");
+    console.log(this.repGoal);
+    return this.repGoal;
   },
 
   setGoal(count) {
