@@ -27,7 +27,7 @@ const LoadingScreen = () => {
   return (
     <View style={styles.blueBackground}>
       <Text style={styles.innerText}>Goal: {goalNumber}</Text>
-      {/* <Text style={styles.innerText}>TEST: {retrievedNumber()}</Text> */}
+      <Text style={styles.innerText}>TEST: {RepStore.getGoal()}</Text>
 
       <TextInput
         style={styles.innerText}
