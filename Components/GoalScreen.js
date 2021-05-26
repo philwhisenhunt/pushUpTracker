@@ -26,8 +26,10 @@ const LoadingScreen = () => {
   // alert({Repstore.getGoal()});
   return (
     <View style={styles.blueBackground}>
-      <Text style={styles.innerText}>Goal: {goalNumber}</Text>
-      <Text style={styles.innerText}>TEST: {RepStore.getGoal()}</Text>
+      <Text style={styles.innerText}>
+        Goal: {goalNumber} TEST: {RepStore.getGoal()}
+      </Text>
+      <Text style={styles.innerText}></Text>
 
       <TextInput
         style={styles.innerText}
