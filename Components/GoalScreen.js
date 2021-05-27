@@ -16,6 +16,7 @@ const LoadingScreen = () => {
   };
 
   const [goalNumber, onChangeGoalNumber] = React.useState(null);
+  const [goalPlace, onChangeGoalPlace] = RepStore.getGoal();
   // const retrievedNumber = () => {
   //   Repstore.getGoal();
   // };
@@ -27,7 +28,7 @@ const LoadingScreen = () => {
   return (
     <View style={styles.blueBackground}>
       <Text style={styles.innerText}>
-        Goal: {goalNumber} TEST: {RepStore.getGoal()}
+        Goal: {goalNumber} TEST: {goalPlace}
       </Text>
       <Text style={styles.innerText}></Text>
 
