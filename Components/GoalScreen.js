@@ -15,22 +15,11 @@ const LoadingScreen = () => {
     navigation.navigate("Goal");
   };
 
-  const [goalNumber, onChangeGoalNumber] = React.useState(null);
-  const [goalPlace, onChangeGoalPlace] = RepStore.getGoal();
-  // const retrievedNumber = () => {
-  //   Repstore.getGoal();
-  // };
-  // var nothing = "";
-  // nothing = () => {
-  //   Repstore.getGoal();
-  // };
-  // alert({Repstore.getGoal()});
+  const [goalNumber, onChangeGoalNumber] = React.useState(RepStore.getGoal());
+
   return (
     <View style={styles.blueBackground}>
-      <Text style={styles.innerText}>
-        Goal: {goalNumber} TEST: {goalPlace}
-      </Text>
-      <Text style={styles.innerText}></Text>
+      <Text style={styles.innerText}>Goal: {goalNumber}</Text>
 
       <TextInput
         style={styles.innerText}
