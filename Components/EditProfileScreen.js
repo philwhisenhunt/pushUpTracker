@@ -8,7 +8,10 @@ const EditProfileScreen = () => {
       <Text>Edit Profile</Text>
       <Text>Phil W.</Text>
       <Text>10 Achievements</Text>
-      <Text>Avg reps per day</Text>
+      <View>
+        <Text>Avg reps per day</Text>
+        <Text>10</Text>
+      </View>
     </View>
   );
 };
@@ -18,5 +21,8 @@ export default EditProfileScreen;
 const styles = StyleSheet.create({
   headline: {
     color: "black",
+  },
+  smallStats: {
+    fontSize: 20,
   },
 });
