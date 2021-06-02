@@ -12,6 +12,11 @@ const EditProfileScreen = () => {
         <Text>Avg reps per day</Text>
         <Text>10</Text>
       </View>
+
+      <View>
+        <Text>Reps this week</Text>
+        <Text>457</Text>
+      </View>
     </View>
   );
 };
