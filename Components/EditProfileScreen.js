@@ -17,6 +17,11 @@ const EditProfileScreen = () => {
         <Text>Reps this week</Text>
         <Text>457</Text>
       </View>
+
+      <View>
+        <Text>Max daily reps this year</Text>
+        <Text>141</Text>
+      </View>
     </View>
   );
 };
