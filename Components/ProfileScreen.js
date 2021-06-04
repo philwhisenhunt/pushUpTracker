@@ -5,7 +5,7 @@ import { TextInput } from "react-native-gesture-handler";
 const ProfileScreen = () => {
   return (
     <View style={styles.headline}>
-      <Text>Edit Profile</Text>
+      <Text>Profile</Text>
       <Text>Phil W.</Text>
       <Text>10 Achievements</Text>
       <View>
@@ -21,6 +21,11 @@ const ProfileScreen = () => {
       <View>
         <Text>Max daily reps this year</Text>
         <Text>141</Text>
+      </View>
+
+      <View>
+        <Text>Max daily reps all time</Text>
+        <Text>14111</Text>
       </View>
     </View>
   );
