@@ -2,37 +2,64 @@ import React, { useState } from "react";
 import { View, Text, Button, StyleSheet, TouchableOpacity } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
 
-const EditProfileScreen = () => {
+const ProfileScreen = () => {
   return (
-    <View style={styles.headline}>
-      <Text>Edit Profile</Text>
-      <Text>Phil W.</Text>
-      <Text>10 Achievements</Text>
-      <View>
-        <Text>Avg reps per day</Text>
-        <Text>10</Text>
-      </View>
+    <View style={styles.blackBackground}>
+      <View style={styles.fullPage}></View>
 
-      <View>
-        <Text>Reps this week</Text>
-        <Text>457</Text>
-      </View>
-
-      <View>
-        <Text>Max daily reps this year</Text>
-        <Text>141</Text>
-      </View>
+      <Text style={styles.innerText}>Name:</Text>
+      <TextInput
+        style={styles.innerText}
+        placeholderTextColor={"#666"}
+        placeholder="First and Last"
+      ></TextInput>
+      <Text style={styles.innerText}>Height:</Text>
+      <TextInput
+        style={styles.innerText}
+        placeholderTextColor={"#666"}
+        placeholder="Height"
+      ></TextInput>
+      <Text style={styles.innerText}>Weight:</Text>
+      <TextInput
+        style={styles.innerText}
+        placeholderTextColor={"#666"}
+        placeholder="Weight"
+      ></TextInput>
+      <Text style={styles.innerText}>Goal Weight:</Text>
+      <TextInput
+        style={styles.innerText}
+        placeholderTextColor={"#666"}
+        placeholder="Goal Weight"
+      ></TextInput>
+      {/* <Button title="Update"></Button> */}
+      <TouchableOpacity style={styles.logoutButton}>
+        <Text style={styles.logoutText}>Logout</Text>
+      </TouchableOpacity>
     </View>
   );
 };
 
-export default EditProfileScreen;
-
+export default ProfileScreen;
 const styles = StyleSheet.create({
-  headline: {
-    color: "black",
+  innerText: {
+    color: "white",
+    fontSize: 30,
+    justifyContent: "center",
   },
-  smallStats: {
+  blackBackground: {
+    backgroundColor: "black",
+    flex: 1,
+  },
+  logoutButton: {
+    borderColor: "white",
+    height: 50,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "white",
+    margin: 30,
+  },
+  logoutText: {
     fontSize: 20,
+    color: "black",
   },
 });
