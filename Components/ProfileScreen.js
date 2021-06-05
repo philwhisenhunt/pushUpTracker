@@ -31,7 +31,7 @@ const ProfileScreen = () => {
   );
 };
 
-export default EditProfileScreen;
+export default ProfileScreen;
 
 const styles = StyleSheet.create({
   headline: {
