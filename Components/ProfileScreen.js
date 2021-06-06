@@ -27,6 +27,7 @@ const ProfileScreen = () => {
         <Text>Max daily reps all time</Text>
         <Text>14111</Text>
       </View>
+      <TouchableOpacity>Edit</TouchableOpacity>
     </View>
   );
 };
