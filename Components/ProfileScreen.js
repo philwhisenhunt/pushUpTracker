@@ -6,6 +6,7 @@ const ProfileScreen = () => {
   return (
     <View style={styles.headline}>
       <Text>Profile</Text>
+      <TouchableOpacity style={styles.profileCircle}></TouchableOpacity>
       <Text>Phil W.</Text>
       <Text>10 Achievements</Text>
       <View>
@@ -52,5 +53,9 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     marginTop: 40,
     marginBottom: 10,
+  },
+  profileCircle: {
+    borderWidth: 5,
+    borderRadius: 5,
   },
 });
