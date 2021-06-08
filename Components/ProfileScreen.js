@@ -27,7 +27,7 @@ const ProfileScreen = () => {
         <Text>Max daily reps all time</Text>
         <Text>14111</Text>
       </View>
-      <TouchableOpacity>Edit</TouchableOpacity>
+      <TouchableOpacity style={styles.editBtn}>Edit</TouchableOpacity>
     </View>
   );
 };
@@ -40,5 +40,17 @@ const styles = StyleSheet.create({
   },
   smallStats: {
     fontSize: 20,
+  },
+  editBtn: {
+    width: 300,
+    backgroundColor: "black",
+    borderRadius: 25,
+    borderWidth: 5,
+    borderColor: "white",
+    height: 50,
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 40,
+    marginBottom: 10,
   },
 });
