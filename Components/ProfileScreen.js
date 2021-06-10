@@ -5,7 +5,7 @@ import { TextInput } from "react-native-gesture-handler";
 const ProfileScreen = () => {
   return (
     <View style={styles.headline}>
-      <Text>Profile</Text>
+      <Text style={styles.sectionHeadline}>Profile</Text>
       <TouchableOpacity style={styles.profileCircle}></TouchableOpacity>
       <Text>Phil W.</Text>
       <Text>10 Achievements</Text>
@@ -38,6 +38,10 @@ export default ProfileScreen;
 const styles = StyleSheet.create({
   headline: {
     color: "black",
+  },
+  sectionHeadline: {
+    color: "black",
+    fontSize: 14,
   },
   smallStats: {
     fontSize: 20,
