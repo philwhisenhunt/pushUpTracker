@@ -57,5 +57,7 @@ const styles = StyleSheet.create({
   profileCircle: {
     borderWidth: 5,
     borderRadius: 5,
+    backgroundColor: "black",
+    height: 50,
   },
 });
