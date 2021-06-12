@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { View, Text, Button, StyleSheet, TouchableOpacity } from "react-native";
-import { TextInput } from "react-native-gesture-handler";
 
 const ProfileScreen = () => {
   return (
@@ -28,7 +27,7 @@ const ProfileScreen = () => {
         <Text>Max daily reps all time</Text>
         <Text>14111</Text>
       </View>
-      <TouchableOpacity style={styles.editBtn}>Edit</TouchableOpacity>
+      <TouchableOpacity style={styles.editBtn}>Edit Profile</TouchableOpacity>
     </View>
   );
 };
