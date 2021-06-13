@@ -9,7 +9,7 @@ const ProfileScreen = () => {
       <Text>Phil W.</Text>
       <Text>10 Achievements</Text>
       <View>
-        <Text>Avg reps per day</Text>
+        <Text style={styles.stats}>Avg reps per day</Text>
         <Text>10</Text>
       </View>
 
@@ -62,5 +62,8 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     backgroundColor: "black",
     height: 50,
+  },
+  stats: {
+    fontSize: 20,
   },
 });
