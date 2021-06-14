@@ -15,17 +15,17 @@ const ProfileScreen = () => {
 
       <View>
         <Text>Reps this week</Text>
-        <Text>457</Text>
+        <Text style={styles.stats}>457</Text>
       </View>
 
       <View>
         <Text>Max daily reps this year</Text>
-        <Text>141</Text>
+        <Text style={styles.stats}>141</Text>
       </View>
 
       <View>
         <Text>Max daily reps all time</Text>
-        <Text>14111</Text>
+        <Text style={styles.stats}>14111</Text>
       </View>
       <TouchableOpacity style={styles.editBtn}>Edit Profile</TouchableOpacity>
     </View>
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   },
   sectionHeadline: {
     color: "black",
-    fontSize: 14,
+    fontSize: 36,
   },
   smallStats: {
     fontSize: 20,
