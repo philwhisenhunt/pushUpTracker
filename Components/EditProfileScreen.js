@@ -32,7 +32,7 @@ const ProfileScreen = () => {
         placeholder="Goal Weight"
       ></TextInput>
       <Text style={styles.innerText}>Target Reps per week:</Text>
-      <TextInput style={styles.innerText} placeholder="700"></TextInput>
+      <TextInput style={styles.innerText} placeholderTextColor={"#666"} placeholder="700"></TextInput>
       {/* <Button title="Update"></Button> */}
       <TouchableOpacity style={styles.logoutButton}>
         <Text style={styles.logoutText}>Logout</Text>
