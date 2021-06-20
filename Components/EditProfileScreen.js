@@ -36,7 +36,6 @@ const ProfileScreen = () => {
       <TouchableOpacity style={styles.saveButton}>
         <Text style={styles.innerText}>Save</Text>
       </TouchableOpacity>
-      {/* <Button title="Update"></Button> */}
       <TouchableOpacity style={styles.logoutButton}>
         <Text style={styles.logoutText}>Logout</Text>
       </TouchableOpacity>
