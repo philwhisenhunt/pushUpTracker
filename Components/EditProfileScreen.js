@@ -34,7 +34,7 @@ const ProfileScreen = () => {
       <Text style={styles.innerText}>Target Reps per week:</Text>
       <TextInput style={styles.innerText} placeholderTextColor={"#666"} placeholder="700"></TextInput>
       <TouchableOpacity style={styles.saveButton}>
-        <Text>Save</Text>
+        <Text style={styles.innerText}>Save</Text>
       </TouchableOpacity>
       {/* <Button title="Update"></Button> */}
       <TouchableOpacity style={styles.logoutButton}>
