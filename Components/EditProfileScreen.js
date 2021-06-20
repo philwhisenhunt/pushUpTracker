@@ -67,6 +67,7 @@ const styles = StyleSheet.create({
   },
   saveButton: {
     fontSize: 20,
-    color: black
+    color: black,
+    jusfifyContent: "center"
   },
 });
