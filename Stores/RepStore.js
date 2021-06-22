@@ -8,6 +8,8 @@ const RepStore = store({
   "Pull-up": 0,
   "Sit-up": 0,
   "Chin-up": 0,
+  "Squat to Press": 0,
+  "Kettlebell Swing": 0,
   repGoal: 300,
   updated_at: null,
 
