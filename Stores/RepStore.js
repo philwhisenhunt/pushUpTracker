@@ -3,13 +3,15 @@ import AsyncStorage from "@react-native-community/async-storage";
 import { observe } from "@nx-js/observer-util";
 
 const RepStore = store({
-  //Eventually, this should be seeded with stuff from the API
+  
   "Push-up": 0,
   "Pull-up": 0,
   "Sit-up": 0,
   "Chin-up": 0,
   "Squat to Press": 0,
   "Kettlebell Swing": 0,
+  "Dumbbell Bicep Curls": 0,
+  "Barbell Bicep Curls": 0,
   repGoal: 300,
   updated_at: null,
 
