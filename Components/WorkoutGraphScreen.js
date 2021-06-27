@@ -11,3 +11,5 @@ const WorkoutGraphScreen = () => {
         </View>
     )
 }
+
+export default WorkoutGraphScreen;
