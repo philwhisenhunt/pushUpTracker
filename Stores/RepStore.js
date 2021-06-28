@@ -14,6 +14,7 @@ const RepStore = store({
   "Barbell Bicep Curls": 0,
   "Widegrip Pull-down": 0,
   "Standing Pull-down": 0,
+  "Squat to Press": 0,
   repGoal: 300,
   updated_at: null,
 
