@@ -7,6 +7,8 @@ const WorkoutGraphScreen = () => {
             <Text>Workout Progress</Text>
                 <TouchableOpacity>
                     <Text>30 days</Text>
+                    <Text>60 days</Text>
+                    <Text>90 days</Text>
                 </TouchableOpacity>
         </View>
     )
