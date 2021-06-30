@@ -1,6 +1,8 @@
 import { ViewBase, Text, Button, StyleSheet } from "react-native";
+import RepStore from "./..Stores/Repstore";
 
-
+const totalReps = RepStore.getTotalReps();
+// Test if above works
 const WorkoutGraphScreen = () => {
     return (
         <View>

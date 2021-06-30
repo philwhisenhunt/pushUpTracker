@@ -40,6 +40,11 @@ const RepStore = store({
     console.log("The repGoal is: " + this.repGoal);
   },
 
+  getTotalReps(){
+    return this["Push-up"] + this["Pull-up"] + this["Sit-up"] + this["Chin-up"];
+
+  },
+
   resetCheck() {
     //Grab the current time
     console.log(this.updated_at);
