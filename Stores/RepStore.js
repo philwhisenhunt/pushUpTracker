@@ -40,7 +40,8 @@ const RepStore = store({
     console.log("The repGoal is: " + this.repGoal);
   },
 
-  getTotalReps(){
+  getTotalReps(amount_of_time){
+    // access db and count up total reps of each category 
     return this["Push-up"] + this["Pull-up"] + this["Sit-up"] + this["Chin-up"];
 
   },
