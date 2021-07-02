@@ -1,7 +1,8 @@
 import { ViewBase, Text, Button, StyleSheet } from "react-native";
 import RepStore from "./..Stores/Repstore";
 
-const totalReps = RepStore.getTotalReps();
+let amount_of_time = 30
+const totalReps = RepStore.getTotalReps(amount_of_time);
 // Test if above works
 const WorkoutGraphScreen = () => {
     return (
