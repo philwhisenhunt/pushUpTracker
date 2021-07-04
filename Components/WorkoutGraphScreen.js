@@ -7,7 +7,7 @@ const totalReps = RepStore.getTotalReps(amount_of_time);
 const WorkoutGraphScreen = () => {
     return (
         <View>
-            <Text>Workout Progress</Text>
+            <Text style = {styles.dayAmount}>Workout Progress</Text>
              
                 <TouchableOpacity>30 days</TouchableOpacity>
                 <TouchableOpacity>60 days</TouchableOpacity>
@@ -17,4 +17,9 @@ const WorkoutGraphScreen = () => {
     )
 }
 
+const styles = StyleSheet.create({
+    dayAmount: {
+        fontSize: 30,
+    },
+});
 export default WorkoutGraphScreen;
