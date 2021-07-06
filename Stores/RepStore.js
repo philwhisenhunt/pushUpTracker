@@ -21,7 +21,7 @@ const RepStore = store({
   updated_at: null,
 
   isHydrated: false,
-  persistableFields: ["Push-up", "Pull-up", "Sit-up", "Chin-up"],
+  persistableFields: ["Push-up", "Pull-up", "Sit-up", "Chin-up", "Squat to Press", "Kettlebell Swing","Dumbbell Bicep Curls"],
 
   setReps(name, count) {
     this[name] = count;
