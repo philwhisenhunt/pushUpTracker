@@ -1,4 +1,6 @@
 export const fetchTotalReps = async () => {
+    let timeframe = "may+2021"
+    //interpolate timeframe
     const URL = `http://localhost:3000/exercises?may+2021`;
     const response = await fetch(url, {
         method: "GET",
