@@ -8,7 +8,9 @@ export const fetchTotalReps = async () => {
             "Content-Type": "application/json",
         },
     });
-
+//Set the time frame based on params
+//add to the url
+//set whatever is returned and decode if needed
     const data = await response.json();
     return data;
 }
