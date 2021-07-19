@@ -1,6 +1,6 @@
-export const fetchTotalReps = async () => {
+export const fetchTotalReps = async (timeframe) => {
     //Set the time frame based on params
-    let timeframe = "may+2021"
+    let timeframe = timeframe
     //add to the url
     const URL = `http://localhost:3000/exercises?`;
 
