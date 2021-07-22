@@ -7,6 +7,7 @@ export const getStuff = async () => {
     headers: {
       "Content-Type": "application/json",
     },
+    body: JSON.stringify(data),
   });
 
   const data = await response.json();
