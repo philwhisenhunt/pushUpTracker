@@ -106,6 +106,9 @@ const RootScreen = view(() => {
               }}
               title="Save workout"
             />
+            <Button onPress= {async () => {
+              
+            }}></Button>
             <Button
               title="Goal"
               onPress={navigateToScreen}
