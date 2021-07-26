@@ -107,7 +107,9 @@ const RootScreen = view(() => {
               title="Save workout"
             />
             <Button onPress= {async () => {
-              
+              const data = await LongtermSave(
+                
+              )
             }}></Button>
             <Button
               title="Goal"
