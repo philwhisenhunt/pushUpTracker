@@ -108,7 +108,12 @@ const RootScreen = view(() => {
             />
             <Button onPress= {async () => {
               const data = await LongtermSave(
-                "http://localhost:3000/exercise_set/*.json"
+                "http://localhost:3000/exercise_set/*.json",
+                {
+                  exercises: {
+                    //Can we add variables here?
+                  }
+                }
               )
             }}></Button>
             <Button
