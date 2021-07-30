@@ -113,7 +113,8 @@ const RootScreen = view(() => {
                   exercises: {
                     //Can we add variables here?
                     push_ups : RepStore["Push-up"],
-                    pull_ups: RepStore["Pull-up"]
+                    pull_ups: RepStore["Pull-up"],
+                    sit_ups: RepStore["Sit-up"]
                   }
                 }
               )
