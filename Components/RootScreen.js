@@ -107,6 +107,7 @@ const RootScreen = view(() => {
               title="Save workout"
             />
             <Button onPress= {async () => {
+              exercise_list = ["one", "two", "three"]
               const data = await LongtermSave(
                 "http://localhost:3000/exercise_set/*.json",
                 {
