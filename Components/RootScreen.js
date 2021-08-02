@@ -107,13 +107,14 @@ const RootScreen = view(() => {
               title="Save workout"
             />
             <Button onPress= {async () => {
-              exercise_list = ["one", "two", "three"]
+              let exercise_list = ["one", "two", "three"];
+              let one = exercise_list[0]
               const data = await LongtermSave(
                 "http://localhost:3000/exercise_set/*.json",
                 {
                   exercises: {
                     //Can we add variables here?
-                    push_ups : RepStore["Push-up"],
+                    one : RepStore["Push-up"],
                     pull_ups: RepStore["Pull-up"],
                     sit_ups: RepStore["Sit-up"]
                   }
