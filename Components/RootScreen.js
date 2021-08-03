@@ -108,14 +108,15 @@ const RootScreen = view(() => {
             />
             <Button onPress= {async () => {
               let exercise_list = ["one", "two", "three"];
-              let one = exercise_list[0]
+              let one = exercise_list[0];
+              let two = exercise_list[1];
               const data = await LongtermSave(
                 "http://localhost:3000/exercise_set/*.json",
                 {
                   exercises: {
                     //Can we add variables here?
                     one : RepStore["Push-up"],
-                    pull_ups: RepStore["Pull-up"],
+                    two: RepStore["Pull-up"],
                     sit_ups: RepStore["Sit-up"]
                   }
                 }
