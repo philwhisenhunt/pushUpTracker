@@ -111,8 +111,8 @@ const RootScreen = view(() => {
               let one = exercise_list[0];
               let two = exercise_list[1];
               let three = exercise_list[2];
-              //  exercise_list.map(list => 
-              //   (puts list)
+              //  exercise_list.map((list) => 
+              //   (puts {list})
               // )
               const data = await LongtermSave(
                 "http://localhost:3000/exercise_set/*.json",
